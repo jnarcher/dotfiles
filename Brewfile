@@ -11,6 +11,8 @@ brew "httpie"
 brew "less"
 # Vi 'workalike' with many additional features
 brew "vim"
+# UNIX shell (command interpreter)
+brew "zsh"
 # Application launcher and productivity software
 cask "alfred"
 # Client for the Dropbox cloud storage service

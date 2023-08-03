@@ -19,11 +19,12 @@
     - ~/Work
 
 - shell:
-    - 
-      command: ./setup_homebrew.zsh
+    - command: ./setup_homebrew.zsh
       stdout: true
       stderr: true
-    - 
-      command: defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
+    - command: ./setup_zsh.zsh
+      stdout: true
+      stderr: true
+    - command: defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
       description: Enabling key-repeat for VS Code vim extension
       quiet: true
