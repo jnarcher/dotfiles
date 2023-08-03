@@ -20,3 +20,4 @@ cask "iterm2"
 # Open-source code editor
 cask "visual-studio-code"
 vscode "GitHub.github-vscode-theme"
+vscode "vscodevim.vim"
