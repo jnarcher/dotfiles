@@ -6,7 +6,7 @@
 
 - link:
 #    ~/.vim: vim
-#    ~/.vimrc: vimrc
+    ~/.vimrc: vimrc
     ~/.zshrc:
     ~/.gitconfig:
 
@@ -18,3 +18,7 @@
       command: ./setup_homebrew.zsh
       stdout: true
       stderr: true
+    - 
+      command: defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
+      description: Enabling key-repeat for VS Code vim extension
+      quiet: true
