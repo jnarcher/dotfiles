@@ -8,6 +8,7 @@
 #    ~/.vim: vim
     ~/.vimrc: vimrc
     ~/.zshrc:
+    ~/.zprofile:
     ~/.zshenv:
     ~/.gitconfig:
     ~/.config/bat: 
