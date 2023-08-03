@@ -7,6 +7,10 @@ brew "exa"
 brew "git"
 # User-friendly cURL replacement (command-line HTTP client)
 brew "httpie"
+# Pager program similar to more
+brew "less"
+# Vi 'workalike' with many additional features
+brew "vim"
 # Application launcher and productivity software
 cask "alfred"
 # Client for the Dropbox cloud storage service
@@ -15,8 +19,6 @@ cask "dropbox"
 cask "gitkraken"
 # Web browser
 cask "google-chrome"
-# Terminal emulator as alternative to Apple's Terminal app
-cask "iterm2"
 # Open-source code editor
 cask "visual-studio-code"
 vscode "GitHub.github-vscode-theme"
