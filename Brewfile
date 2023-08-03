@@ -19,3 +19,4 @@ cask "google-chrome"
 cask "iterm2"
 # Open-source code editor
 cask "visual-studio-code"
+vscode "GitHub.github-vscode-theme"
