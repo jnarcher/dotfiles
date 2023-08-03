@@ -19,6 +19,8 @@ cask "dropbox"
 cask "gitkraken"
 # Web browser
 cask "google-chrome"
+# Move and resize windows using keyboard shortcuts or snap areas
+cask "rectangle"
 # Open-source code editor
 cask "visual-studio-code"
 vscode "GitHub.github-vscode-theme"
