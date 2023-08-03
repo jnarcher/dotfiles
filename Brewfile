@@ -19,8 +19,6 @@ cask "dropbox"
 cask "gitkraken"
 # Web browser
 cask "google-chrome"
-# Terminal emulator as alternative to Apple's Terminal app
-cask "iterm2"
 # Open-source code editor
 cask "visual-studio-code"
 vscode "GitHub.github-vscode-theme"
