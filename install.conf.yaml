@@ -4,14 +4,13 @@
 
 - clean: ['~']
 
-#- link:
-#    ~/.tmux.conf: tmux.conf
+- link:
 #    ~/.vim: vim
 #    ~/.vimrc: vimrc
+    ~/.zshrc: zshrc
 
 - create:
    - ~/Work
-   - ~/test/nested/directories
 
 #- shell:
 #  - [git submodule update --init --recursive, Installing submodules]
