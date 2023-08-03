@@ -7,6 +7,8 @@ brew "exa"
 brew "git"
 # User-friendly cURL replacement (command-line HTTP client)
 brew "httpie"
+# Pager program similar to more
+brew "less"
 # Vi 'workalike' with many additional features
 brew "vim"
 # Application launcher and productivity software

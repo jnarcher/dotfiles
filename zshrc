@@ -9,7 +9,7 @@ export HOMEBREW_CASK_OPTS="--no-quarantine"
 
 # Create Aliases
 alias ls='exa -laFh --git'
-#alias brewupdate='brew bundle dump --force --describe'
+alias bbd='echo "Updating Brewfile..." && brew bundle dump --force --describe && echo "Complete!"'
 
 
 # Customize Prompt(s)
