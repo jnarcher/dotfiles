@@ -11,3 +11,4 @@ These are my dotfiles.
 - Trackpad (Three Finger Drag and Tap to Click)
 - Git (config and SSH)
 - Homebrew Install
+- Alfred (turn off spotlight shortcut and set Alfred shortcut)
