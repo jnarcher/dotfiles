@@ -1,21 +1,26 @@
 # .zshrc
 
 # Set Variables
+
 # Syntax highlighting for man pages using bat
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+# Set default homebrew option to bypass MacOS gatekeeping
 export HOMEBREW_CASK_OPTS="--no-quarantine"
 
 # Change ZSH Options
 
 # Create Aliases
+
+# Better ls
 alias ls='exa -laFh --git'
+# Update brewfile
 alias bbd='echo "Updating Brewfile..." && brew bundle dump --force --describe && echo "Complete!"'
+# More easily see $PATH
 alias trail='<<<${(F)path}'
 
 # Customize Prompt(s)
 PROMPT='
 %1~ %L %# '
-
 RPROMPT='%*'
 
 
