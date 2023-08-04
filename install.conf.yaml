@@ -24,6 +24,9 @@
     - command: ./setup_zsh.zsh
       stdout: true
       stderr: true
+    - command: ./setup_node.zsh
+      stdout: true
+      stderr: true
     - command: defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
       description: Enabling key-repeat for VS Code vim extension
       quiet: true
