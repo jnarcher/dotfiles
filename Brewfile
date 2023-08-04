@@ -17,6 +17,8 @@ brew "vim"
 brew "zsh"
 # Application launcher and productivity software
 cask "alfred"
+# App to build and share containerized applications and microservices
+cask "docker"
 # Client for the Dropbox cloud storage service
 cask "dropbox"
 # Web browser
