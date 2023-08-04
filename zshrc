@@ -16,6 +16,7 @@ export PREFIX="$N_PREFIX"
 alias ls='exa -laFh --git'
 alias bbd='echo "Updating Brewfile..." && brew bundle dump --force --describe && echo "Complete!"'
 alias trail='<<<${(F)path}'
+alias rm=trash
 
 # Customize Prompt(s)
 PROMPT='
