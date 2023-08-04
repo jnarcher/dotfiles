@@ -19,10 +19,10 @@ brew "zsh"
 cask "alfred"
 # Client for the Dropbox cloud storage service
 cask "dropbox"
-# Git client focusing on productivity
-cask "gitkraken"
 # Web browser
 cask "google-chrome"
+# Meet, chat, call, and collaborate in just one place
+cask "microsoft-teams"
 # Move and resize windows using keyboard shortcuts or snap areas
 cask "rectangle"
 # Music streaming service
