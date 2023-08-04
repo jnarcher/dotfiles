@@ -25,6 +25,8 @@ cask "dropbox"
 cask "google-chrome"
 # Meet, chat, call, and collaborate in just one place
 cask "microsoft-teams"
+# App to write, plan, collaborate, and get organized
+cask "notion"
 # Move and resize windows using keyboard shortcuts or snap areas
 cask "rectangle"
 # Music streaming service
