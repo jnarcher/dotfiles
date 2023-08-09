@@ -21,6 +21,8 @@ cask "alfred"
 cask "docker"
 # Client for the Dropbox cloud storage service
 cask "dropbox"
+# Git client focusing on productivity
+cask "gitkraken"
 # Web browser
 cask "google-chrome"
 # Terminal emulator as alternative to Apple's Terminal app
@@ -36,9 +38,11 @@ cask "spotify"
 # Open-source code editor
 cask "visual-studio-code"
 vscode "adpyke.codesnap"
+vscode "albert.TabOut"
 vscode "dunstontc.viml"
 vscode "ecmel.vscode-html-css"
 vscode "esbenp.prettier-vscode"
+vscode "formulahendry.auto-rename-tag"
 vscode "GitHub.github-vscode-theme"
 vscode "PKief.material-icon-theme"
 vscode "vscodevim.vim"
