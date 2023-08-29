@@ -13,7 +13,4 @@ fi
 # It's currently exported in zshrc:
 # export HOMEBREW_CASK_OPTS="--no-quarantine"
 
-# This is to get access to powershell fonts
-brew tap homebrew/cask-fonts
-
 brew bundle --verbose
