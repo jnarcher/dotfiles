@@ -32,6 +32,8 @@ alias ls='exa -laFh --git'
 alias bbd='echo "Updating Brewfile..." && brew bundle dump --force --describe && echo "Complete!"'
 alias trail='<<<${(F)path}'
 alias rm=trash
+alias vim='nvim'
+#alias vimf='cd 
 
 # Customize Prompt(s)
 PROMPT='%F{221}%n%f %1~ %F{59}%#%f%F{146}%f '

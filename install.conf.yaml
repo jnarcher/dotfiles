@@ -20,6 +20,7 @@
 
 - create:
     - ~/Work
+    - ~/Personal
 
 - shell:
     - command: ./setup_homebrew.zsh
