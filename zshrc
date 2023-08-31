@@ -35,6 +35,7 @@ alias rm=trash
 alias vim='nvim'
 # sets the directory using fuzzy finder
 alias sd='cd $(find * -type d | fzf)'
+alias dots='cd ~/.dotfiles'
 
 # Customize Prompt(s)
 PROMPT='%F{221}%n%f %1~ %F{59}%#%f%F{146}%f '

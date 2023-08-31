@@ -55,6 +55,11 @@ require('lazy').setup({
     'mbbill/undotree',
     'tpope/vim-fugitive',
     'tpope/vim-rhubarb',
+    {
+        'numToStr/Comment.nvim',
+        opts = {},
+        lazy = false,
+    },
 
     {
         -- LSP Configuration & Plugins
@@ -63,10 +68,6 @@ require('lazy').setup({
             -- Automatically install LSPs to stdpath for neovim
             { 'williamboman/mason.nvim', config = true },
             'williamboman/mason-lspconfig.nvim',
-
-            -- Useful status updates for LSP
-            -- NOTE: `opts = {}` is the same as calling `require('fidget').setup({})`
-            { 'j-hui/fidget.nvim',       tag = 'legacy', opts = {} },
 
             -- Additional lua configuration, makes nvim stuff amazing!
             'folke/neodev.nvim',
@@ -111,5 +112,20 @@ require('lazy').setup({
             end,
         },
     },
+
+    {
+        -- Set lualine as statusline
+        'nvim-lualine/lualine.nvim',
+        -- See `:help lualine.txt`
+        opts = {
+            options = {
+                icons_enabled = false,
+                theme = 'iceberg_dark',
+                component_separators = '|',
+                section_separators = '',
+            },
+        },
+    },
+
 
 }, {})
