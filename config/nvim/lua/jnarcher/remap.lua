@@ -16,6 +16,14 @@ vim.keymap.set('n', 'J', 'mzJ`z')
 vim.keymap.set('n', 'n', 'nzzzv')
 vim.keymap.set('n', 'N', 'Nzzzv')
 
+-- Keeps cursor in middle of screen when page up/down
+vim.keymap.set('n', '<C-u>', '<C-u>zz')
+vim.keymap.set('n', '<C-d>', '<C-d>zz')
+
+-- Stay in NORMAL mode when adding new lines
+vim.keymap.set('n', 'o', 'o<Esc>')
+vim.keymap.set('n', 'O', 'O<Esc>')
+
 -- Copy selection to system clipboard
 vim.keymap.set('n', '<leader>y', '"+y')
 vim.keymap.set('v', '<leader>y', '"+y')
