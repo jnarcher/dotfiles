@@ -29,6 +29,8 @@ vim.opt.isfname:append('@-@')
 
 vim.opt.updatetime = 50
 
+vim.opt.cursorline = true
+
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 vim.g.netrw_banner = 0
