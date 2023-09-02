@@ -8,6 +8,8 @@ brew "exa"
 brew "fzf"
 # Distributed revision control system
 brew "git"
+# Open source programming language to build simple/reliable/efficient software
+brew "go"
 # User-friendly cURL replacement (command-line HTTP client)
 brew "httpie"
 # Pager program similar to more
@@ -42,6 +44,8 @@ cask "microsoft-teams"
 cask "notion"
 # Move and resize windows using keyboard shortcuts or snap areas
 cask "rectangle"
+# PDF reader and note-taking application
+cask "skim"
 # Music streaming service
 cask "spotify"
 # Open-source code editor
@@ -57,6 +61,7 @@ vscode "formulahendry.auto-rename-tag"
 vscode "GitHub.github-vscode-theme"
 vscode "ms-azuretools.vscode-docker"
 vscode "ms-vscode-remote.remote-containers"
+vscode "mtxr.sqltools"
 vscode "PKief.material-icon-theme"
 vscode "rust-lang.rust-analyzer"
 vscode "tamasfe.even-better-toml"
