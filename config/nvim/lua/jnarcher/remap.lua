@@ -30,6 +30,7 @@ vim.keymap.set('v', '<leader>d', '"_d')
 
 -- Remove `Q` keybind
 vim.keymap.set('n', 'Q', '<nop>')
+vim.keymap.set('n', 'q', '<nop>')
 
 -- Format current buffer
 vim.keymap.set('n', '<leader>f', function() vim.lsp.buf.format() end)
