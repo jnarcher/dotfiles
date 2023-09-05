@@ -50,3 +50,12 @@ vim.keymap.set('n', ':WQ<CR>', vim.cmd.wq)
 -- More readable naviagation
 vim.keymap.set('n', '{', '{zz')
 vim.keymap.set('n', '}', '}zz')
+
+-- Smarter braces (the <S-CR> is for quick typing mistakes)
+vim.keymap.set('i', '{<CR>', '{<CR>}<ESC>O')
+vim.keymap.set('i', '{<S-CR>', '{<CR>}<ESC>O')
+vim.keymap.set('i', '(<CR>', '(<CR>)<ESC>O')
+vim.keymap.set('i', '(<S-CR>', '(<CR>)<ESC>O')
+vim.keymap.set('i', '[<CR>', '[<CR>]<ESC>O')
+vim.keymap.set('i', '[<S-CR>', '[<CR>]<ESC>O')
+
