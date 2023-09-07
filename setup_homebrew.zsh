@@ -3,10 +3,10 @@
 echo "\n<<< Starting Homebrew Setup >>>\n"
 
 if exists brew; then
-  echo "brew exists, skipping install"
+    echo "brew exists, skipping install"
 else
-  echo "brew doesn't exist, continuing with install"
-  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    echo "brew doesn't exist, continuing with install"
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 fi
 
 # TODO: Might be possible in future to use `brew bundle --no-quarantine` as an option.

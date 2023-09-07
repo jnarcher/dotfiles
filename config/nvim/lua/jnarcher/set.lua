@@ -1,3 +1,5 @@
+--[[ set.lua ]]
+
 vim.opt.nu = true
 vim.opt.rnu = true
 
@@ -28,10 +30,10 @@ vim.opt.signcolumn = 'yes'
 vim.opt.isfname:append('@-@')
 
 vim.opt.updatetime = 50
-vim.opt.colorcolumn = "80"
 
 vim.opt.cursorline = true
 
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
-vim.g.netrw_banner = 0
+
+vim.opt.laststatus = 0

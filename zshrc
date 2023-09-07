@@ -35,7 +35,7 @@ alias rm=trash
 alias vim='nvim'
 # sets the directory using fuzzy finder
 alias sd='cd $(find * -type d | fzf)'
-alias dots='cd ~/.dotfiles'
+alias dots='cd ~/.dotfiles && vim .'
 
 # Customize Prompt(s)
 PROMPT='%F{221}%n%f %1~ %F{59}%#%f%F{146}%f '
@@ -45,16 +45,16 @@ RPROMPT=''
 # Add Locations to $path array
 typeset -U path
 path=(
-  "$N_PREFIX/bin"
-  $path
-  "/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+    "$N_PREFIX/bin"
+    $path
+    "/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 )
 
 # Write Handy Functions
 
 # Make and enter new directory
 function mkcd() {
-  mkdir -p "$@" && cd "$_";
+    mkdir -p "$@" && cd "$_";
 }
 
 # Use ZSH Plugins

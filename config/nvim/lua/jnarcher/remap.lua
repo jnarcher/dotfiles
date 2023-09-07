@@ -1,5 +1,4 @@
-vim.keymap.set({ 'n', 'v' }, '<C-c>', '<Esc>')
-vim.keymap.set('n', '<leader>ot', vim.cmd.Ex)
+--[[ remap.lua ]]
 
 -- Moving selection up and down
 vim.keymap.set('v', 'J', ":m '>+1<CR>gv=gv")
@@ -33,13 +32,7 @@ vim.keymap.set('n', 'Q', '<nop>')
 vim.keymap.set('n', 'q', '<nop>')
 
 -- Format current buffer
-vim.keymap.set('n', '<leader>f', function() vim.lsp.buf.format() end)
-
--- Window navigation
-vim.keymap.set({ 'n', 'v' }, '<C-h>', '<C-w><C-h>')
-vim.keymap.set({ 'n', 'v' }, '<C-j>', '<C-w><C-j>')
-vim.keymap.set({ 'n', 'v' }, '<C-k>', '<C-w><C-k>')
-vim.keymap.set({ 'n', 'v' }, '<C-l>', '<C-w><C-l>')
+-- vim.keymap.set('n', '<leader>f', function() vim.lsp.buf.format() end)
 
 -- Help with typos
 vim.keymap.set('n', ':W<CR>', vim.cmd.w)
@@ -50,12 +43,4 @@ vim.keymap.set('n', ':WQ<CR>', vim.cmd.wq)
 -- More readable naviagation
 vim.keymap.set('n', '{', '{zz')
 vim.keymap.set('n', '}', '}zz')
-
--- Smarter braces (the <S-CR> is for quick typing mistakes)
-vim.keymap.set('i', '{<CR>', '{<CR>}<ESC>O')
-vim.keymap.set('i', '{<S-CR>', '{<CR>}<ESC>O')
-vim.keymap.set('i', '(<CR>', '(<CR>)<ESC>O')
-vim.keymap.set('i', '(<S-CR>', '(<CR>)<ESC>O')
-vim.keymap.set('i', '[<CR>', '[<CR>]<ESC>O')
-vim.keymap.set('i', '[<S-CR>', '[<CR>]<ESC>O')
 

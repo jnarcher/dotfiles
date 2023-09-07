@@ -1,3 +1,5 @@
+--[[ lazy.lua ]]
+
 -- Install Package Manager
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
@@ -37,12 +39,12 @@ require('lazy').setup({
         priority = 1000,
         config = function()
             require('github-theme').setup({})
-            vim.cmd('colorscheme github_dark_dimmed')
+            vim.cmd('colorscheme github_dark_tritanopia')
         end,
     },
 
+    -- Highlight, edit, and navigate code
     {
-        -- Highlight, edit, and navigate code
         'nvim-treesitter/nvim-treesitter',
         dependencies = { 'nvim-treesitter/nvim-treesitter-textobjects' },
         build = ':TSUpdate',
@@ -59,17 +61,32 @@ require('lazy').setup({
     'tpope/vim-rhubarb',
 
     -- Easy commenting
+    -- Adds git related signs to the gutter, 
+    -- as well as utilities for managing changes
     {
-        'numToStr/Comment.nvim',
-        lazy = false,
+        'lewis6991/gitsigns.nvim',
+        opts = {
+            signs = {
+                add = { text = '+' },
+                change = { text = '~' },
+                delete = { text = '_' },
+                topdelete = { text = '‾' },
+                changedelete = { text = '~' },
+            },
+        },
     },
+
+    -- TODO: redo this lsp/complete section
 
     -- LSP Configuration & Plugins
     {
         'neovim/nvim-lspconfig',
         dependencies = {
             -- Automatically install LSPs to stdpath for neovim
-            { 'williamboman/mason.nvim', config = true },
+            {
+                'williamboman/mason.nvim',
+                config = true,
+            },
             'williamboman/mason-lspconfig.nvim',
 
             -- Additional lua configuration, makes nvim stuff amazing!
@@ -93,41 +110,29 @@ require('lazy').setup({
         },
     },
 
-    -- Adds git related signs to the gutter, 
-    -- as well as utilities for managing changes
+    -- Easy commenting
     {
-        'lewis6991/gitsigns.nvim',
-        opts = {
-            signs = {
-                add = { text = '+' },
-                change = { text = '~' },
-                delete = { text = '_' },
-                topdelete = { text = '‾' },
-                changedelete = { text = '~' },
-            },
-        },
-    },
-
-    -- Set lualine as statusline
-    {
-        'nvim-lualine/lualine.nvim',
-        opts = {
-            options = {
-                icons_enabled = true,
-                theme = 'iceberg_dark',
-                component_separators = '|',
-                section_separators = '',
-            },
-        },
+        'numToStr/Comment.nvim',
+        lazy = false,
     },
 
     -- Add indentation guides even on blank lines
+    'lukas-reineke/indent-blankline.nvim',
+
+    -- Auto pairing characters
     {
-        'lukas-reineke/indent-blankline.nvim',
-        opts = {
-            char = '┊',
-            show_trailing_blankline_indent = false,
+        'windwp/nvim-autopairs',
+        event = 'InsertEnter',
+    },
+
+    -- Cool File tree
+    {
+        'stevearc/oil.nvim',
+        dependencies = {
+            'nvim-tree/nvim-web-devicons'
         },
     },
 
-}, {})
+    -- Gui-like input fields
+    'stevearc/dressing.nvim',
+});
