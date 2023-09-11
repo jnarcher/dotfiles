@@ -18,6 +18,8 @@ brew "less"
 brew "n"
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
+# Terminal multiplexer
+brew "tmux"
 # Vi 'workalike' with many additional features
 brew "vim"
 # UNIX shell (command interpreter)
@@ -48,3 +50,23 @@ cask "notion"
 cask "skim"
 # Music streaming service
 cask "spotify"
+# Open-source code editor
+cask "visual-studio-code"
+vscode "aaron-bond.better-comments"
+vscode "adpyke.codesnap"
+vscode "albert.TabOut"
+vscode "dunstontc.viml"
+vscode "eamodio.gitlens"
+vscode "ecmel.vscode-html-css"
+vscode "esbenp.prettier-vscode"
+vscode "formulahendry.auto-rename-tag"
+vscode "GitHub.github-vscode-theme"
+vscode "ms-azuretools.vscode-docker"
+vscode "ms-vscode-remote.remote-containers"
+vscode "mtxr.sqltools"
+vscode "PKief.material-icon-theme"
+vscode "rust-lang.rust-analyzer"
+vscode "tamasfe.even-better-toml"
+vscode "vscodevim.vim"
+vscode "yzane.markdown-pdf"
+vscode "yzhang.markdown-all-in-one"

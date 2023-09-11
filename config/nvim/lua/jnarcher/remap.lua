@@ -40,9 +40,6 @@ vim.keymap.set('n', ':Q<CR>', vim.cmd.q)
 vim.keymap.set('n', ':Wq<CR>', vim.cmd.wq)
 vim.keymap.set('n', ':WQ<CR>', vim.cmd.wq)
 
-vim.keymap.set('n', '<C-q>', vim.cmd.q)
-vim.keymap.set('n', '<C-w>', vim.cmd.w)
-
 -- More readable naviagation
 vim.keymap.set('n', '{', '{zz')
 vim.keymap.set('n', '}', '}zz')

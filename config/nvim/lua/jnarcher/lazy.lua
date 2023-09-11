@@ -99,7 +99,13 @@ require('lazy').setup({
         },
     },
 
-    -- Nicer UI
+    -- Status bar
+    {
+        'nvim-lualine/lualine.nvim',
+        requires = { 'nvim-tree/nvim-web-devicons', opt = true }
+    },
+
+    -- Nicer UI elements
     'stevearc/dressing.nvim',
 
     -- LSP Configuration & Plugins

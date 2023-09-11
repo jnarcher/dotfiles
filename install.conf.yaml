@@ -5,7 +5,7 @@
 - clean: ['~']
 
 - link:
-    ~/.vimrc: vimrc
+    ~/.vimrc:
     ~/.zshrc:
     ~/.zprofile:
     ~/.zshenv:
@@ -17,6 +17,8 @@
     ~/.config/nvim: 
       create: true
       path: config/nvim/
+    ~/.tmux/:
+    ~/.tmux.conf:
 
 - create:
     - ~/Work
