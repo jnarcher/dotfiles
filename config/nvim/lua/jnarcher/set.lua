@@ -12,8 +12,7 @@ vim.opt.expandtab = true
 
 vim.opt.smartindent = true
 
-vim.opt.wrap = true
-vim.opt.linebreak = true
+vim.opt.wrap = false
 
 vim.opt.swapfile = false
 vim.opt.backup = false
@@ -37,3 +36,6 @@ vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
 vim.opt.laststatus = 0
+
+vim.opt.cmdheight = 0
+

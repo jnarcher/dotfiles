@@ -1,4 +1,4 @@
-fap "homebrew/bundle"
+tap "homebrew/bundle"
 tap "homebrew/cask-fonts"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
@@ -28,6 +28,8 @@ brew "zsh-syntax-highlighting"
 cask "alfred"
 # Enable Windows-like alt-tab
 cask "alt-tab"
+# Automatic tiling window manager similar to xmonad
+cask "amethyst"
 # App to build and share containerized applications and microservices
 cask "docker"
 # Client for the Dropbox cloud storage service
@@ -42,8 +44,6 @@ cask "iterm2"
 cask "microsoft-teams"
 # App to write, plan, collaborate, and get organized
 cask "notion"
-# Move and resize windows using keyboard shortcuts or snap areas
-cask "rectangle"
 # PDF reader and note-taking application
 cask "skim"
 # Music streaming service

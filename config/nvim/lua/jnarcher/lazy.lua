@@ -32,15 +32,22 @@ require('lazy').setup({
         },
     },
 
-    -- Color Scheme
+    -- Color Schemes
     {
         'projekt0n/github-nvim-theme',
         lazy = false,
         priority = 1000,
-        config = function()
-            require('github-theme').setup({})
-            vim.cmd('colorscheme github_dark_tritanopia')
-        end,
+    },
+    {
+        'catppuccin/nvim',
+        name = 'catppuccin',
+        lazy = false,
+        prority = 1000,
+    },
+    {
+        'folke/tokyonight.nvim',
+        lazy = false,
+        priority = 1000,
     },
 
     -- Highlight, edit, and navigate code
@@ -56,13 +63,7 @@ require('lazy').setup({
     -- Better undo
     'mbbill/undotree',
 
-    -- Git tools
-    'tpope/vim-fugitive',
-    'tpope/vim-rhubarb',
-
-    -- Easy commenting
     -- Adds git related signs to the gutter, 
-    -- as well as utilities for managing changes
     {
         'lewis6991/gitsigns.nvim',
         opts = {
@@ -76,47 +77,12 @@ require('lazy').setup({
         },
     },
 
-    -- TODO: redo this lsp/complete section
-
-    -- LSP Configuration & Plugins
-    {
-        'neovim/nvim-lspconfig',
-        dependencies = {
-            -- Automatically install LSPs to stdpath for neovim
-            {
-                'williamboman/mason.nvim',
-                config = true,
-            },
-            'williamboman/mason-lspconfig.nvim',
-
-            -- Additional lua configuration, makes nvim stuff amazing!
-            'folke/neodev.nvim',
-        },
-    },
-
-    -- Autocompletion
-    {
-        'hrsh7th/nvim-cmp',
-        dependencies = {
-            -- Snippet Engine & its associated nvim-cmp source
-            'L3MON4D3/LuaSnip',
-            'saadparwaiz1/cmp_luasnip',
-
-            -- Adds LSP completion capabilities
-            'hrsh7th/cmp-nvim-lsp',
-
-            -- Adds a number of user-friendly snippets
-            'rafamadriz/friendly-snippets',
-        },
-    },
-
     -- Easy commenting
     {
         'numToStr/Comment.nvim',
         lazy = false,
     },
 
-    -- Add indentation guides even on blank lines
     'lukas-reineke/indent-blankline.nvim',
 
     -- Auto pairing characters
@@ -133,6 +99,34 @@ require('lazy').setup({
         },
     },
 
-    -- Gui-like input fields
+    -- Nicer UI
     'stevearc/dressing.nvim',
+
+    -- LSP Configuration & Plugins
+    {
+        'neovim/nvim-lspconfig',
+        dependencies = {
+            -- Automatically install LSPs to stdpath for neovim
+            { 'williamboman/mason.nvim', config = true },
+            'williamboman/mason-lspconfig.nvim',
+
+            { 'j-hui/fidget.nvim', tag = 'legacy', opts = {} },
+        },
+    },
+
+    {
+        -- Autocompletion
+        'hrsh7th/nvim-cmp',
+        dependencies = {
+            -- Snippet Engine & its associated nvim-cmp source
+            'L3MON4D3/LuaSnip',
+            'saadparwaiz1/cmp_luasnip',
+
+            -- Adds LSP completion capabilities
+            'hrsh7th/cmp-nvim-lsp',
+
+            -- Adds a number of user-friendly snippets
+            'rafamadriz/friendly-snippets',
+        },
+    },
 });
