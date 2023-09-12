@@ -11,18 +11,25 @@
     ~/.zshenv:
     ~/.gitconfig:
     ~/.hushlogin:
+    ~/.tmux.conf:
     ~/.config/bat: 
       create: true
       path: config/bat/
     ~/.config/nvim: 
-      create: true
+      creat: true
       path: config/nvim/
     ~/.tmux/:
-    ~/.tmux.conf:
+      create: true
+      path: tmux/
+    ~/.scripts/:
+      crate: true
+      path: bin/scripts
+
+    
 
 - create:
-    - ~/Work
-    - ~/Personal
+    - ~/work
+    - ~/personal
 
 - shell:
     - command: ./setup_homebrew.zsh

@@ -1,3 +1,1 @@
-require("mason").setup({
-    -- Mason config
-})
+require("mason").setup()

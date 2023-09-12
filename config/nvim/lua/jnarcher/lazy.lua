@@ -1,5 +1,3 @@
---[[ lazy.lua ]]
-
 -- Install Package Manager
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
@@ -99,14 +97,11 @@ require('lazy').setup({
         },
     },
 
-    -- Status bar
-    {
-        'nvim-lualine/lualine.nvim',
-        requires = { 'nvim-tree/nvim-web-devicons', opt = true }
-    },
-
     -- Nicer UI elements
     'stevearc/dressing.nvim',
+
+    -- Nicer winbar
+    'fgheng/winbar.nvim',
 
     -- LSP Configuration & Plugins
     {

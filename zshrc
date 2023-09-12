@@ -33,8 +33,6 @@ alias bbd='echo "Updating Brewfile..." && brew bundle dump --force --describe &&
 alias trail='<<<${(F)path}'
 alias rm=trash
 alias vim='nvim'
-# sets the directory using fuzzy finder
-alias sd='cd $(find * -type d | fzf)'
 alias dots='cd ~/.dotfiles && nvim .'
 
 # Customize Prompt(s)

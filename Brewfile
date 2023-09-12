@@ -36,8 +36,16 @@ cask "amethyst"
 cask "docker"
 # Client for the Dropbox cloud storage service
 cask "dropbox"
+# Free monospaced font with programming ligatures
+cask "font-fira-code"
 # Developer targeted fonts with a high number of glyphs
 cask "font-fira-code-nerd-font"
+cask "font-hack"
+# Developer targeted fonts with a high number of glyphs
+cask "font-hack-nerd-font"
+cask "font-meslo-for-powerline"
+# Developer targeted fonts with a high number of glyphs
+cask "font-meslo-lg-nerd-font"
 # Web browser
 cask "google-chrome"
 # Terminal emulator as alternative to Apple's Terminal app
