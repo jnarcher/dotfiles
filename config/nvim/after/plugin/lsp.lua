@@ -1,5 +1,3 @@
---[[ lsp.lua ]]
-
 --  This function gets run when an LSP connects to a particular buffer.
 local on_attach = function(_, bufnr)
 
@@ -14,7 +12,6 @@ local on_attach = function(_, bufnr)
     nmap('<leader>rn', vim.lsp.buf.rename, '[R]e[n]ame')
     nmap('<leader>ca', vim.lsp.buf.code_action, '[C]ode [A]ction')
     nmap('<leader>od', vim.diagnostic.open_float, '[O]pen [D]iagnostic')
-    nmap('<leader>gd', vim.lsp.buf.hover, '[G]et [D]efinition')
 
     nmap('gd', vim.lsp.buf.definition, '[G]oto [D]efinition')
     nmap('gr', require('telescope.builtin').lsp_references, '[G]oto [R]eferences')

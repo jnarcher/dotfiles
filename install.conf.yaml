@@ -16,14 +16,14 @@
       create: true
       path: config/bat/
     ~/.config/nvim: 
-      creat: true
+      create: true
       path: config/nvim/
     ~/.tmux/:
       create: true
       path: tmux/
-    ~/.scripts/:
-      crate: true
-      path: bin/scripts
+    ~/.local/bin/:
+      create: true
+      path: bin
 
     
 

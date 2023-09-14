@@ -47,6 +47,18 @@ require('lazy').setup({
         lazy = false,
         priority = 1000,
     },
+    {
+        'rose-pine/neovim',
+        name = 'rose-pine',
+        lazy = false,
+        priority = 1000,
+    },
+    {
+        'rebelot/kanagawa.nvim',
+        name = 'kanagawa',
+        lazy = false,
+        priority = 1000,
+    },
 
     -- Highlight, edit, and navigate code
     {
@@ -89,19 +101,18 @@ require('lazy').setup({
         event = 'InsertEnter',
     },
 
-    -- Cool File tree
-    {
-        'stevearc/oil.nvim',
-        dependencies = {
-            'nvim-tree/nvim-web-devicons'
-        },
-    },
-
     -- Nicer UI elements
     'stevearc/dressing.nvim',
 
     -- Nicer winbar
     'fgheng/winbar.nvim',
+
+    -- Cleaner netrw
+    {
+        'stevearc/oil.nvim',
+        lazy = false,
+        dependencies = { 'nvim-tree/nvim-web-devicons'},
+    },
 
     -- LSP Configuration & Plugins
     {
@@ -110,8 +121,6 @@ require('lazy').setup({
             -- Automatically install LSPs to stdpath for neovim
             { 'williamboman/mason.nvim', config = true },
             'williamboman/mason-lspconfig.nvim',
-
-            { 'j-hui/fidget.nvim', tag = 'legacy', opts = {} },
         },
     },
 
@@ -129,5 +138,14 @@ require('lazy').setup({
             -- Adds a number of user-friendly snippets
             'rafamadriz/friendly-snippets',
         },
+    },
+
+    -- Nicer lsp windows
+    {
+        'nvimdev/lspsaga.nvim',
+        dependencies = {
+            'nvim-treesitter/nvim-treesitter',
+            'nvim-tree/nvim-web-devicons',
+        }
     },
 });

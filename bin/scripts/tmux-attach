@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+# Using fzf to attach to existing sessions
+session=$(tmux ls \
+    | awk '{print $1}' \
+    | sed 's/://' \
+    | fzf --header "CHOOSE SESSION" --layout=reverse)
+
+if [ "$?" = 0 ]; then
+    tmux attach -t "$session"
+fi
+
+# if [[ $# -eq 0 ]]; then
+#     selected=$(find ~/work ~/personal -mindepth 1 -maxdepth 3 -type d | fzf)
+# else
+#     selected=$1
+# fi
+
+#echo "$1"

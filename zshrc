@@ -1,6 +1,7 @@
 # .zshrc
 
-# Set Variables
+
+# -------------- VARIABLES -------------- #
 
 # Prevent duplicate command history
 HISTSIZE=5000
@@ -24,8 +25,6 @@ export NULLCMD=bat
 export N_PREFIX="$HOME/.n"
 export PREFIX="$N_PREFIX"
 
-# Change ZSH Options
-
 # Create Aliases
 
 alias ls='exa -laFh --git'
@@ -34,10 +33,11 @@ alias trail='<<<${(F)path}'
 alias rm=trash
 alias vim='nvim'
 alias dots='cd ~/.dotfiles && nvim .'
+alias so='source ~/.zshrc'
+alias ta='~/.local/bin/scripts/tmux-attach'
 
 # Customize Prompt(s)
-PROMPT='%F{221}%n%f %1~ %F{59}%#%f%F{146}%f '
-RPROMPT=''
+PROMPT='%F{221}%n%f@%F{59}%m%f %1~ %F{%(?.59.red)}%#%f '
 
 
 # Add Locations to $path array
@@ -48,20 +48,20 @@ path=(
     "/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 )
 
-# Write Handy Functions
+# -------------- FUNCTIONS -------------- #
 
 # Make and enter new directory
-function mkcd() {
+function fn_make_and_enter_dir() {
     mkdir -p "$@" && cd "$_";
 }
+alias mkcd="fn_make_and_enter_dir"
 
-# Use ZSH Plugins
+# -------------- PLUGINS -------------- #
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 autoload -U compinit && compinit
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
-
 
 ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets)
 
@@ -90,3 +90,4 @@ ZSH_HIGHLIGHT_STYLES[double-quoted-argument]=fg=yellow
 ZSH_HIGHLIGHT_STYLES[dollar-double-quoted-argument]=fg=cyan
 ZSH_HIGHLIGHT_STYLES[back-double-quoted-argument]=fg=cyan
 ZSH_HIGHLIGHT_STYLES[assign]=none
+

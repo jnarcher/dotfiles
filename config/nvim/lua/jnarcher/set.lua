@@ -1,3 +1,8 @@
+vim.g.netrw_banner = 0
+
+vim.g.mapleader = ' '
+vim.g.maplocalleader = ' '
+
 vim.opt.nu = true
 vim.opt.rnu = true
 
@@ -30,9 +35,6 @@ vim.opt.updatetime = 50
 
 vim.opt.cursorline = true
 
-vim.g.mapleader = ' '
-vim.g.maplocalleader = ' '
-
-vim.opt.cmdheight = 0
+vim.opt.cmdheight = 1
 vim.opt.laststatus = 0
 

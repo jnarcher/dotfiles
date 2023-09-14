@@ -1,46 +1,65 @@
---[[ remap.lua ]]
+local map = vim.keymap.set
+
+-- Arrow keys suck
+map({"n", "i", "v"}, "<up>", "<nop>")
+map({"n", "i", "v"}, "<down>", "<nop>")
+map({"n", "i", "v"}, "<left>", "<nop>")
+map({"n", "i", "v"}, "<right>", "<nop>")
+
+-- Quicker Escape from insert mode
+map("i", "jk", "<Esc>l")
+map("i", "kj", "<Esc>")
+
+-- Open File Navigator (and enable line numbers)
+map("n", "<leader>ot", ":Oil<CR>")
 
 -- Moving selection up and down
-vim.keymap.set('v', 'J', ":m '>+1<CR>gv=gv")
-vim.keymap.set('v', 'K', ":m '<-2<CR>gv=gv")
+-- These are buggy 
+-- map('v', 'J', ":m '>+1<CR>gv=gv")
+-- map('v', 'K', ":m '<-2<CR>gv=gv")
 
--- Moving selection right and left
-vim.keymap.set('v', '>', '>gv')
-vim.keymap.set('v', '<', '<gv')
+-- When moving blocks of code left or right keep selection
+map('v', '>', '>gv')
+map('v', '<', '<gv')
 
 -- Keeps cursor in place during `J` cmd
-vim.keymap.set('n', 'J', 'mzJ`z')
+map('n', 'J', 'mzJ`z')
 
 -- Keeps cursor in middle of screen when cycling through search
-vim.keymap.set('n', 'n', 'nzzzv')
-vim.keymap.set('n', 'N', 'Nzzzv')
+map('n', 'n', 'nzzzv')
+map('n', 'N', 'Nzzzv')
 
 -- Keeps cursor in middle of screen when page up/down
-vim.keymap.set('n', '<C-u>', '<C-u>zz')
-vim.keymap.set('n', '<C-d>', '<C-d>zz')
+map('n', '<C-u>', '<C-u>zz')
+map('n', '<C-d>', '<C-d>zz')
 
 -- Copy selection to system clipboard
-vim.keymap.set('n', '<leader>y', '"+y')
-vim.keymap.set('v', '<leader>y', '"+y')
-
--- Delete to void register
-vim.keymap.set('n', '<leader>d', '"_d')
-vim.keymap.set('v', '<leader>d', '"_d')
+map('n', '<leader>y', '"+y')
+map('v', '<leader>y', '"+y')
 
 -- Remove `Q` keybind
-vim.keymap.set('n', 'Q', '<nop>')
-vim.keymap.set('n', 'q', '<nop>')
+map('n', 'Q', vim.cmd.nop)
+map('n', 'q', vim.cmd.nop)
 
 -- Format current buffer
 -- vim.keymap.set('n', '<leader>f', function() vim.lsp.buf.format() end)
 
--- Help with typos
-vim.keymap.set('n', ':W<CR>', vim.cmd.w)
-vim.keymap.set('n', ':Q<CR>', vim.cmd.q)
-vim.keymap.set('n', ':Wq<CR>', vim.cmd.wq)
-vim.keymap.set('n', ':WQ<CR>', vim.cmd.wq)
+map('n', '<leader>w', vim.cmd.w)
+map('n', '<leader>q', vim.cmd.q)
+map('n', '<leader>z', vim.cmd.wq)
+map('i', '<C-s>', '<Esc>:w<CR>a')
+
+-- window navigation
+map({'n', 'i'}, '<C-h>', '<C-w><C-h>')
+map({'n', 'i'}, '<C-j>', '<C-w><C-j>')
+map({'n', 'i'}, '<C-k>', '<C-w><C-k>')
+map({'n', 'i'}, '<C-l>', '<C-w><C-l>')
 
 -- More readable naviagation
-vim.keymap.set('n', '{', '{zz')
-vim.keymap.set('n', '}', '}zz')
+map('n', '{', '{zz')
+map('n', '}', '}zz')
+
+-- jumping to beginning and end of row
+map({'n', 'v'}, 'H', '^')
+map({'n', 'v'}, 'L', '$')
 

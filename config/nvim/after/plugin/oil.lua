@@ -1,33 +1,21 @@
--- list of files to hide in file tree
-local hidden_files = {
-    '.DS_Store',
-    '.swp',
-    '.git',
-    'node_modules',
-}
-
-local oil = require('oil')
-
-oil.setup({
+require("oil").setup({
     default_file_explorer = true,
-    view_options = {
-        show_hidden = true,
-        is_always_hidden = function(name)
-            for _, val in pairs(hidden_files) do
-                if val == name then return true end
-            end
-            return false
-        end,
+    columns = {
+        "permissions",
+        "icon",
     },
     win_options = {
-        signcolumn = 'no',
+        wrap = false,
+        signcolumn = "yes",
+        foldcolumn = "0",
     },
+    delete_to_trash = true,
+    skip_confirm_for_simple_edits = true,
+    trash_command = "trash",
     keymaps = {
-        ['g?'] = 'actions.show_help',
-        ['<CR>'] = 'actions.select',
-        ['-'] = 'actions.parent',
+        ["<C-p>"] = false, -- Conflicts with git telescope search
     },
-    use_default_keymaps = false,
+    view_options = {
+        show_hidden = true,
+    }
 })
-
-vim.keymap.set('n', '<leader>ot', oil.open)
