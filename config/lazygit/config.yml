@@ -1,4 +1,5 @@
 gui:
+  showBottomLine: false
   theme:
     activeBorderColor:
       - '#74c7ec'
