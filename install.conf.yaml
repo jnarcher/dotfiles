@@ -21,14 +21,15 @@
     ~/.config/lazygit: 
       create: true
       path: config/lazygit/
-    ~/.tmux/:
+    ~/.config/tmux/:
       create: true
-      path: tmux/
+      path: config/tmux/
+    ~/.config/iterm2_config/:
+      create: true
+      path: config/iterm2_config/
     ~/.local/bin/:
       create: true
       path: bin
-
-    
 
 - create:
     - ~/work
