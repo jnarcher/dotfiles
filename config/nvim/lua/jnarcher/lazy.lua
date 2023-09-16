@@ -104,9 +104,6 @@ require('lazy').setup({
     -- Nicer UI elements
     'stevearc/dressing.nvim',
 
-    -- Nicer winbar
-    'fgheng/winbar.nvim',
-
     -- Cleaner netrw
     {
         'stevearc/oil.nvim',
