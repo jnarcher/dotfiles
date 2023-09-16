@@ -24,6 +24,7 @@ export HOMEBREW_CASK_OPTS="--no-quarantine"
 export NULLCMD=bat
 export N_PREFIX="$HOME/.n"
 export PREFIX="$N_PREFIX"
+export LG_CONFIG_FILE="$HOME/.config/lazygit/config.yml"
 
 # Create Aliases
 
@@ -35,6 +36,7 @@ alias vim='nvim'
 alias dots='cd ~/.dotfiles && nvim .'
 alias so='source ~/.zshrc'
 alias ta='~/.local/bin/scripts/tmux-attach'
+alias lg='lazygit'
 
 # Customize Prompt(s)
 PROMPT='%F{221}%n%f@%F{59}%m%f %1~ %F{%(?.59.red)}%#%f '

@@ -18,6 +18,9 @@
     ~/.config/nvim: 
       create: true
       path: config/nvim/
+    ~/.config/lazygit: 
+      create: true
+      path: config/lazygit/
     ~/.tmux/:
       create: true
       path: tmux/
