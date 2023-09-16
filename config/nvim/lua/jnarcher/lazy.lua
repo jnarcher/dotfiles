@@ -139,13 +139,4 @@ require('lazy').setup({
             'rafamadriz/friendly-snippets',
         },
     },
-
-    -- Nicer lsp windows
-    {
-        'nvimdev/lspsaga.nvim',
-        dependencies = {
-            'nvim-treesitter/nvim-treesitter',
-            'nvim-tree/nvim-web-devicons',
-        }
-    },
 });
