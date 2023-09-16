@@ -1,22 +1,19 @@
 local map = vim.keymap.set
 
--- Arrow keys suck
-map({"n", "i", "v"}, "<up>", "<nop>")
-map({"n", "i", "v"}, "<down>", "<nop>")
-map({"n", "i", "v"}, "<left>", "<nop>")
-map({"n", "i", "v"}, "<right>", "<nop>")
+-- Easier to enter command mode
+map('n', ';', ':')
 
--- Quicker Escape from insert mode
-map("i", "jk", "<Esc>l")
-map("i", "kj", "<Esc>")
+-- Arrow keys suc
+map({'n', 'i', 'v'}, '<up>', '<nop>')
+map({'n', 'i', 'v'}, '<down>', '<nop>')
+map({'n', 'i', 'v'}, '<left>', '<nop>')
+map({'n', 'i', 'v'}, '<right>', '<nop>')
 
--- Open File Navigator (and enable line numbers)
-map("n", "<leader>ot", ":Oil<CR>")
+-- Quicker escape from insert and command mode
+map({'i', 'c'}, 'jk', '<Esc>')
 
--- Moving selection up and down
--- These are buggy 
--- map('v', 'J', ":m '>+1<CR>gv=gv")
--- map('v', 'K', ":m '<-2<CR>gv=gv")
+-- Open file navigator (and enable line numbers)
+map('n', '<leader>ot', ':Oil<CR>')
 
 -- When moving blocks of code left or right keep selection
 map('v', '>', '>gv')
@@ -40,15 +37,12 @@ map('v', '<leader>y', '"+y')
 -- Remove `Q` keybind
 map('n', 'Q', vim.cmd.nop)
 
--- Format current buffer
--- vim.keymap.set('n', '<leader>f', function() vim.lsp.buf.format() end)
-
 map('n', '<leader>w', vim.cmd.w)
 map('n', '<leader>q', vim.cmd.q)
 map('n', '<leader>z', vim.cmd.wq)
 map('i', '<C-s>', '<Esc>:w<CR>a')
 
--- window navigation
+-- Window navigation
 map({'n', 'i'}, '<C-h>', '<C-w><C-h>')
 map({'n', 'i'}, '<C-j>', '<C-w><C-j>')
 map({'n', 'i'}, '<C-k>', '<C-w><C-k>')
@@ -58,7 +52,7 @@ map({'n', 'i'}, '<C-l>', '<C-w><C-l>')
 map('n', '{', '{zz')
 map('n', '}', '}zz')
 
--- jumping to beginning and end of row
+-- Jumping to beginning and end of row
 map({'n', 'v'}, 'H', '^')
 map({'n', 'v'}, 'L', '$')
 
