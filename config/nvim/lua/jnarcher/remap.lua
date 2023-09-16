@@ -39,7 +39,6 @@ map('v', '<leader>y', '"+y')
 
 -- Remove `Q` keybind
 map('n', 'Q', vim.cmd.nop)
-map('n', 'q', vim.cmd.nop)
 
 -- Format current buffer
 -- vim.keymap.set('n', '<leader>f', function() vim.lsp.buf.format() end)
@@ -63,3 +62,8 @@ map('n', '}', '}zz')
 map({'n', 'v'}, 'H', '^')
 map({'n', 'v'}, 'L', '$')
 
+-- Get hints for under cursor
+map('n', 'K', vim.lsp.buf.hover)
+
+-- Select everything
+map('n', '<C-a>', 'G$vgg0')
