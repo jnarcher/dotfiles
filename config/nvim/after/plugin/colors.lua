@@ -55,5 +55,6 @@ function Colorize(color)
         italic = true,
     })
     vim.api.nvim_set_hl(0, 'LineNR', { fg = '#5f5f5f', bg = 'none' })
+    vim.api.nvim_set_hl(0, 'IndentBlankLineChar', { fg = '#333333' })
 end
 Colorize()

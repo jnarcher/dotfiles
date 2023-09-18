@@ -9,6 +9,9 @@ map({'n', 'i', 'v'}, '<down>', '<nop>')
 map({'n', 'i', 'v'}, '<left>', '<nop>')
 map({'n', 'i', 'v'}, '<right>', '<nop>')
 
+-- Add semi-colon to end of line
+map('i', ';', '<Esc>$a;')
+
 -- Quicker escape from insert and command mode
 map({'i', 'c'}, 'jk', '<Esc>')
 
