@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+# Using fzf to attach to existing sessions
+session=$(tmux ls \
+    | awk '{print $1}' \
+    | sed 's/://' \
+    | fzf-tmux --header "CHOOSE SESSION" --reverse --border)
+
+if [ "$?" = 0 ]; then
+    tmux attach -t "$session"
+fi

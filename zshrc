@@ -34,7 +34,7 @@ alias rm=trash
 alias vim='nvim'
 alias dots='cd ~/.dotfiles && nvim .'
 alias so='source ~/.zshrc'
-alias ta='~/.local/bin/scripts/tmux-attach'
+alias ta='~/.local/bin/tmux-attach'
 alias lg='lazygit'
 
 # Customize Prompt(s)
