@@ -4,6 +4,6 @@
 	ignore = dirty
 
 [submodule "tpm"]
-    path = tmux/plugins/tpm
+    path = config/tmux/plugins/tpm
     url = https://github.com/tmux-plugins/tpm.git
     ignore = dirty
