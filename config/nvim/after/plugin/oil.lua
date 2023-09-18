@@ -1,3 +1,8 @@
+local ignored_filetypes = {
+    ".DS_Store",
+    ".swp",
+}
+
 require("oil").setup({
     default_file_explorer = true,
     columns = {
@@ -16,5 +21,13 @@ require("oil").setup({
     },
     view_options = {
         show_hidden = true,
+        is_always_hidden = function(name, _)
+            for _, type in ipairs(ignored_filetypes) do
+                if name == type then
+                    return true
+                end
+            end
+            return false
+        end
     }
 })

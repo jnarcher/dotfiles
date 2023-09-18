@@ -1,7 +1,7 @@
 local map = vim.keymap.set
 
 -- Easier to enter command mode
-map('n', ';', ':')
+map({'n', 'v'}, ';', ':')
 
 -- Arrow keys suc
 map({'n', 'i', 'v'}, '<up>', '<nop>')
