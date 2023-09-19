@@ -18,6 +18,8 @@ require("oil").setup({
     trash_command = "trash",
     keymaps = {
         ["<C-p>"] = false, -- Conflicts with git telescope search
+        ["<C-h>"] = false, -- Conflicts with vim-tmux-navigation
+        ["<C-l>"] = false, -- Conflicts with vim-tmux-navigation
     },
     view_options = {
         show_hidden = true,

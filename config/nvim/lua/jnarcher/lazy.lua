@@ -141,4 +141,8 @@ require('lazy').setup({
             'rafamadriz/friendly-snippets',
         },
     },
+
+    -- Tmux to vim pane switching
+    'christoomey/vim-tmux-navigator'
+
 });
