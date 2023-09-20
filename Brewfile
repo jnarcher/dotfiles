@@ -13,6 +13,8 @@ brew "git"
 brew "git-delta"
 # Open source programming language to build simple/reliable/efficient software
 brew "go"
+# User-friendly cURL replacement (command-line HTTP client)
+brew "httpie"
 # Simple terminal UI for git commands
 brew "lazygit"
 # Pager program similar to more
@@ -27,6 +29,8 @@ brew "tmux"
 brew "vim"
 # Access X11 clipboards from the command-line
 brew "xclip"
+# Programming language designed for robustness, optimality, and clarity
+brew "zig"
 # Shell extension to navigate your filesystem faster
 brew "zoxide"
 # UNIX shell (command interpreter)
@@ -35,6 +39,8 @@ brew "zsh"
 brew "zsh-syntax-highlighting"
 # Application launcher and productivity software
 cask "alfred"
+# Enable Windows-like alt-tab
+cask "alt-tab"
 # Automatic tiling window manager similar to xmonad
 cask "amethyst"
 # App to build and share containerized applications and microservices
