@@ -25,6 +25,8 @@ brew "neovim"
 brew "tmux"
 # Vi 'workalike' with many additional features
 brew "vim"
+# Access X11 clipboards from the command-line
+brew "xclip"
 # Shell extension to navigate your filesystem faster
 brew "zoxide"
 # UNIX shell (command interpreter)
