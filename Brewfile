@@ -1,5 +1,6 @@
 tap "homebrew/bundle"
 tap "homebrew/cask-fonts"
+tap "homebrew/services"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
 # Modern replacement for 'ls'
@@ -12,8 +13,6 @@ brew "git"
 brew "git-delta"
 # Open source programming language to build simple/reliable/efficient software
 brew "go"
-# User-friendly cURL replacement (command-line HTTP client)
-brew "httpie"
 # Simple terminal UI for git commands
 brew "lazygit"
 # Pager program similar to more
@@ -26,14 +25,14 @@ brew "neovim"
 brew "tmux"
 # Vi 'workalike' with many additional features
 brew "vim"
+# Shell extension to navigate your filesystem faster
+brew "zoxide"
 # UNIX shell (command interpreter)
 brew "zsh"
 # Fish shell like syntax highlighting for zsh
 brew "zsh-syntax-highlighting"
 # Application launcher and productivity software
 cask "alfred"
-# Enable Windows-like alt-tab
-cask "alt-tab"
 # Automatic tiling window manager similar to xmonad
 cask "amethyst"
 # App to build and share containerized applications and microservices

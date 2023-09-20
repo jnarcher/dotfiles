@@ -32,9 +32,10 @@ alias bbd='echo "Updating Brewfile..." && brew bundle dump --force --describe &&
 alias trail='<<<${(F)path}'
 alias rm=trash
 alias vim='nvim'
-alias dots='cd ~/.dotfiles'
+alias v='nvim .'
 alias so='source ~/.zshrc'
-alias ta='~/.local/bin/tmux-attach'
+alias mkex='chmod +x'
+alias t='~/.local/bin/tmux-sessionizer'
 alias lg='lazygit'
 
 # Customize Prompt(s)
@@ -92,3 +93,4 @@ ZSH_HIGHLIGHT_STYLES[dollar-double-quoted-argument]=fg=cyan
 ZSH_HIGHLIGHT_STYLES[back-double-quoted-argument]=fg=cyan
 ZSH_HIGHLIGHT_STYLES[assign]=none
 
+eval "$(zoxide init zsh)"
