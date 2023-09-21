@@ -29,8 +29,6 @@ brew "tmux"
 brew "vim"
 # Access X11 clipboards from the command-line
 brew "xclip"
-# Programming language designed for robustness, optimality, and clarity
-brew "zig"
 # Shell extension to navigate your filesystem faster
 brew "zoxide"
 # UNIX shell (command interpreter)
@@ -41,8 +39,6 @@ brew "zsh-syntax-highlighting"
 cask "alfred"
 # Enable Windows-like alt-tab
 cask "alt-tab"
-# Automatic tiling window manager similar to xmonad
-cask "amethyst"
 # App to build and share containerized applications and microservices
 cask "docker"
 # Client for the Dropbox cloud storage service
@@ -65,6 +61,8 @@ cask "iterm2"
 cask "microsoft-teams"
 # App to write, plan, collaborate, and get organized
 cask "notion"
+# Move and resize windows using keyboard shortcuts or snap areas
+cask "rectangle"
 # PDF reader and note-taking application
 cask "skim"
 # Music streaming service

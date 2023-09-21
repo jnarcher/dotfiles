@@ -3,14 +3,14 @@ local map = vim.keymap.set
 -- Easier to enter command mode
 map({'n', 'v'}, ';', ':')
 
--- Arrow keys suc
+-- Folding
+map('n', '<leader><leader>', 'zc')
+
+-- Arrow keys suck
 map({'n', 'i', 'v'}, '<up>', '<nop>')
 map({'n', 'i', 'v'}, '<down>', '<nop>')
 map({'n', 'i', 'v'}, '<left>', '<nop>')
 map({'n', 'i', 'v'}, '<right>', '<nop>')
-
--- Add semi-colon to end of line
-map('i', ';', '<Esc>$a;')
 
 -- Quicker escape from insert and command mode
 map({'i', 'c'}, 'jk', '<Esc>')
@@ -61,6 +61,3 @@ map({'n', 'v'}, 'L', '$')
 
 -- Get hints for under cursor
 map('n', 'K', vim.lsp.buf.hover)
-
--- Select everything
-map('n', '<C-a>', 'G$vgg0')
