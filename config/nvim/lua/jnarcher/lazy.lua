@@ -67,6 +67,10 @@ require('lazy').setup({
         build = ':TSUpdate',
     },
 
+    {
+        'nvim-treesitter/nvim-treesitter-context',
+    },
+
     -- Quick file jumping
     'ThePrimeagen/harpoon',
 

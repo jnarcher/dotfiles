@@ -1,8 +1,5 @@
 local map = vim.keymap.set
 
--- Easier to enter command mode
-map({'n', 'v'}, ';', ':')
-
 -- Folding
 map('n', '<leader><leader>', 'zc')
 
@@ -11,9 +8,6 @@ map({'n', 'i', 'v'}, '<up>', '<nop>')
 map({'n', 'i', 'v'}, '<down>', '<nop>')
 map({'n', 'i', 'v'}, '<left>', '<nop>')
 map({'n', 'i', 'v'}, '<right>', '<nop>')
-
--- Quicker escape from insert and command mode
-map({'i', 'c'}, 'jk', '<Esc>')
 
 -- Open file navigator (and enable line numbers)
 map('n', '<leader>ot', ':Oil<CR>')
