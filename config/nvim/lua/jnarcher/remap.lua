@@ -3,12 +3,6 @@ local map = vim.keymap.set
 -- Folding
 map('n', '<leader><leader>', 'zc')
 
--- Arrow keys suck
-map({'n', 'i', 'v'}, '<up>', '<nop>')
-map({'n', 'i', 'v'}, '<down>', '<nop>')
-map({'n', 'i', 'v'}, '<left>', '<nop>')
-map({'n', 'i', 'v'}, '<right>', '<nop>')
-
 -- Open file navigator (and enable line numbers)
 map('n', '<leader>ot', ':Oil<CR>')
 
