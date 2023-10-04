@@ -147,6 +147,14 @@ require('lazy').setup({
     },
 
     -- Tmux to vim pane switching
-    'christoomey/vim-tmux-navigator'
+    'christoomey/vim-tmux-navigator',
+
+    {
+        'akinsho/bufferline.nvim',
+        version = '*',
+        dependencies = {
+            'nvim-tree/nvim-web-devicons',
+        },
+    },
 
 });
