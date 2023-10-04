@@ -67,10 +67,6 @@ require('lazy').setup({
         build = ':TSUpdate',
     },
 
-    {
-        'nvim-treesitter/nvim-treesitter-context',
-    },
-
     -- Quick file jumping
     'ThePrimeagen/harpoon',
 
@@ -97,7 +93,10 @@ require('lazy').setup({
         lazy = false,
     },
 
-    'lukas-reineke/indent-blankline.nvim',
+    {
+        'lukas-reineke/indent-blankline.nvim',
+        main = 'ibl',
+    },
 
     -- Auto pairing characters
     {
