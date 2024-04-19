@@ -105,7 +105,7 @@ require('lazy').setup({
     },
 
     -- Nicer UI elements
-    'stevearc/dressing.nvim',
+    -- 'stevearc/dressing.nvim',
 
     -- Cleaner filetree
     {
