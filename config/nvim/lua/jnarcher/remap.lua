@@ -28,11 +28,6 @@ map('v', '<leader>y', '"+y')
 -- Remove `Q` keybind
 map('n', 'Q', vim.cmd.nop)
 
-map('n', '<leader>w', vim.cmd.w)
-map('n', '<leader>q', vim.cmd.q)
-map('n', '<leader>z', vim.cmd.wq)
-map('i', '<C-s>', '<Esc>:w<CR>a')
-
 -- Window navigation
 map({'n', 'i'}, '<C-h>', '<C-w><C-h>')
 map({'n', 'i'}, '<C-j>', '<C-w><C-j>')
