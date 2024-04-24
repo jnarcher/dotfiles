@@ -94,8 +94,15 @@ require('lazy').setup({
     },
 
     {
-        'lukas-reineke/indent-blankline.nvim',
-        main = 'ibl',
+        "lukas-reineke/indent-blankline.nvim",
+        main = "ibl",
+        opts = {
+            indent = { char = '⎢' },
+            scope = {
+                show_start = false,
+                show_end = false,
+            }
+        },
     },
 
     -- Auto pairing characters
@@ -103,9 +110,6 @@ require('lazy').setup({
         'windwp/nvim-autopairs',
         event = 'InsertEnter',
     },
-
-    -- Nicer UI elements
-    'stevearc/dressing.nvim',
 
     -- Cleaner filetree
     {
@@ -148,12 +152,10 @@ require('lazy').setup({
     -- Tmux to vim pane switching
     'christoomey/vim-tmux-navigator',
 
+    -- Nicer error UI
     {
-        'akinsho/bufferline.nvim',
-        version = '*',
-        dependencies = {
-            'nvim-tree/nvim-web-devicons',
-        },
+        "folke/trouble.nvim",
+        dependencies = { "nvim-tree/nvim-web-devicons" },
+        opts = { },
     },
-
 });
