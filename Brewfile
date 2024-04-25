@@ -3,8 +3,6 @@ tap "homebrew/cask-fonts"
 tap "homebrew/services"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
-# Modern replacement for 'ls'
-brew "exa"
 # Command-line fuzzy finder written in Go
 brew "fzf"
 # Distributed revision control system
@@ -19,6 +17,8 @@ brew "httpie"
 brew "lazygit"
 # Pager program similar to more
 brew "less"
+# Clone of ls with colorful output, file type icons, and more
+brew "lsd"
 # Node version management
 brew "n"
 # Ambitious Vim-fork focused on extensibility and agility
@@ -57,9 +57,11 @@ cask "font-meslo-lg-nerd-font"
 cask "google-chrome"
 # Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2"
+# Provides updates to various Microsoft products
+cask "microsoft-auto-update"
 # Meet, chat, call, and collaborate in just one place
 cask "microsoft-teams"
-# App to write, plan, collaborate, and get organized
+# App to write, plan, collaborate, and get organised
 cask "notion"
 # Move and resize windows using keyboard shortcuts or snap areas
 cask "rectangle"
