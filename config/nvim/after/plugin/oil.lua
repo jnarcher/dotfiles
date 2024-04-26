@@ -30,6 +30,10 @@ require("oil").setup({
                 end
             end
             return false
-        end
+        end,
+        sort = {
+            { "type", "asc"},
+            { "name", "asc"}
+        }
     }
 })
