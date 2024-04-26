@@ -23,6 +23,8 @@ brew "lsd"
 brew "n"
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
+# Safe, concurrent, practical language
+brew "rust"
 # Terminal multiplexer
 brew "tmux"
 # Vi 'workalike' with many additional features
