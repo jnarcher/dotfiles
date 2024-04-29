@@ -67,10 +67,14 @@ cask "microsoft-teams"
 cask "notion"
 # Move and resize windows using keyboard shortcuts or snap areas
 cask "rectangle"
+# .NET IDE
+cask "rider"
 # PDF reader and note-taking application
 cask "skim"
 # Music streaming service
 cask "spotify"
+# Video game digital distribution service
+cask "steam"
 # Open-source code editor
 cask "visual-studio-code"
 vscode "aaron-bond.better-comments"
