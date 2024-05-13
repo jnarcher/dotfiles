@@ -49,6 +49,7 @@ path=(
     "$N_PREFIX/bin"
     $path
     "/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+    "$HOME/go/bin"
 )
 
 # -------------- FUNCTIONS -------------- #
