@@ -3,3 +3,5 @@
 	email = 118948506+jnarcher@users.noreply.github.com
 [init]
 	defaultBranch = main
+[core]
+	editor = nvim
