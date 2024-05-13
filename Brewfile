@@ -57,6 +57,8 @@ cask "font-meslo-for-powerline"
 cask "font-meslo-lg-nerd-font"
 # Web browser
 cask "google-chrome"
+# Client for the Google Drive storage service
+cask "google-drive"
 # Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2"
 # Provides updates to various Microsoft products
