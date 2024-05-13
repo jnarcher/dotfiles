@@ -39,3 +39,5 @@ vim.opt.cmdheight = 1
 vim.opt.laststatus = 0
 
 vim.opt.winbar = "%=%{expand('%:~:.')}%m%="
+
+vim.opt.colorcolumn = "81"
