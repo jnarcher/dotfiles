@@ -30,12 +30,11 @@ export LG_CONFIG_FILE="$HOME/.config/lazygit/config.yml"
 alias ls='lsd -laFh --git'
 alias bbd='echo "Updating Brewfile..." && brew bundle dump --force --describe && echo "Complete!"'
 alias trail='<<<${(F)path}'
-alias rm=trash
+alias rm='trash'
 alias vim='nvim'
 alias vi='nvim'
 alias v='nvim'
 alias so='source ~/.zshrc'
-alias mkex='chmod +x'
 alias t='~/.local/bin/tmux-sessionizer'
 alias lg='lazygit'
 
