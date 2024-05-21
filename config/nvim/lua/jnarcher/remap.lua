@@ -1,8 +1,5 @@
 local map = vim.keymap.set
 
--- Folding
-map('n', '<leader><leader>', 'zc')
-
 -- Open file navigator (and enable line numbers)
 map('n', '<leader>ot', ':Oil<CR>')
 
