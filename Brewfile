@@ -33,6 +33,8 @@ brew "tmux"
 brew "vim"
 # Access X11 clipboards from the command-line
 brew "xclip"
+# Programming language designed for robustness, optimality, and clarity
+brew "zig"
 # Shell extension to navigate your filesystem faster
 brew "zoxide"
 # UNIX shell (command interpreter)
