@@ -15,7 +15,6 @@ require("oil").setup({
     },
     delete_to_trash = true,
     skip_confirm_for_simple_edits = true,
-    trash_command = "trash",
     keymaps = {
         ["<C-p>"] = false, -- Conflicts with git telescope search
         ["<C-h>"] = false, -- Conflicts with vim-tmux-navigation
