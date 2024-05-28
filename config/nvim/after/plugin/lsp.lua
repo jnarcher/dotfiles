@@ -31,9 +31,6 @@ local servers = {
     clangd = {},
     gopls = {},
     rust_analyzer = {},
-    zls = {
-        cmd = { '/opt/homebrew/bin/zls' }
-    },
     tsserver = {},
     html = { filetypes = { 'html', 'twig', 'hbs'} },
     lua_ls = {
