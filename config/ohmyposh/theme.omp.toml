@@ -11,7 +11,7 @@ console_title_template = '{{if .Root}}(Admin){{end}} {{.PWD}}'
         style = 'plain'
         background = 'transparent'
         foreground = 'p:primary'
-        template = '{{ .Path }}'
+        template = '{{ .Path }} '
 
         [blocks.segments.properties]
             style = 'full'
@@ -21,7 +21,7 @@ console_title_template = '{{if .Root}}(Admin){{end}} {{.PWD}}'
         style = 'plain'
         foreground = 'p:gray'
         background = 'transparent'
-        template = ' {{ .HEAD }}{{ if or (.Working.Changed) (.Staging.Changed) }}*{{ end }} <p:secondary>{{ if gt .Behind 0 }}⇣{{ end }}{{ if gt .Ahead 0 }}⇡{{ end }}</>'
+        template = '{{ .HEAD }}{{ if or (.Working.Changed) (.Staging.Changed) }}*{{ end }} <p:secondary>{{ if gt .Behind 0 }}⇣{{ end }}{{ if gt .Ahead 0 }}⇡{{ end }}</>'
 
         [blocks.segments.properties]
             branch_icon = ''
