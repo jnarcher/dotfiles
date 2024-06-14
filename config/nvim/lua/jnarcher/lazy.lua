@@ -174,4 +174,9 @@ require('lazy').setup({
         dependencies = { 'nvim-tree/nvim-web-devicons' },
         opts = {},
     },
+
+    {
+        'echasnovski/mini.notify',
+        version = '*',
+    },
 });
