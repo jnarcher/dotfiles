@@ -73,7 +73,7 @@ require('lazy').setup({
     -- Better undo
     'mbbill/undotree',
 
-    -- Adds git related signs to the gutter, 
+    -- Adds git related signs to the gutter,
     {
         'lewis6991/gitsigns.nvim',
         opts = {
@@ -115,7 +115,7 @@ require('lazy').setup({
     {
         'stevearc/oil.nvim',
         lazy = false,
-        dependencies = { 'nvim-tree/nvim-web-devicons'},
+        dependencies = { 'nvim-tree/nvim-web-devicons' },
     },
 
     {
@@ -159,11 +159,19 @@ require('lazy').setup({
         opts = {},
     },
 
+    {
+        'ray-x/lsp_signature.nvim',
+        event = 'VeryLazy',
+        opts = {
+            hint_enable = false,
+        },
+        config = function(_, opts) require('lsp_signature').setup(opts) end
+    },
 
     -- Nicer error UI
     {
         'folke/trouble.nvim',
         dependencies = { 'nvim-tree/nvim-web-devicons' },
-        opts = { },
+        opts = {},
     },
 });
