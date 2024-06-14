@@ -30,7 +30,7 @@ require('kanagawa').setup({
 
 function Colorize(color)
 
-    color = color or 'catppuccin'
+    color = color or 'rose-pine'
     vim.cmd.colorscheme(color)
 
     -- vim.api.nvim_set_hl(0, 'Normal', { bg = 'none' })
@@ -49,7 +49,7 @@ function Colorize(color)
     --     fg = '#de5b5b',
     --     bg = 'none',
     -- })
-    -- vim.api.nvim_set_hl(0, 'CursorLine', { bg = 'none' })
+    vim.api.nvim_set_hl(0, 'CursorLine', { bg = 'none' })
     -- vim.api.nvim_set_hl(0, 'CursorLineNR', {
     --     fg = '#ffd75f',
     --     bold = true,
