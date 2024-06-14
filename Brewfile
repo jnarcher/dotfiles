@@ -26,8 +26,14 @@ brew "less"
 brew "n"
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
+# Highly capable, feature-rich programming language
+brew "perl"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.11"
 # Safe, concurrent, practical language
 brew "rust"
+# Official tldr client written in Rust
+brew "tlrc"
 # Terminal multiplexer
 brew "tmux"
 # Vi 'workalike' with many additional features
