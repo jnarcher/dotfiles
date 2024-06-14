@@ -32,6 +32,8 @@ brew "perl"
 brew "python@3.11"
 # Safe, concurrent, practical language
 brew "rust"
+# Programmatically correct mistyped console commands
+brew "thefuck"
 # Official tldr client written in Rust
 brew "tlrc"
 # Terminal multiplexer

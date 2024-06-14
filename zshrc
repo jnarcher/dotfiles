@@ -139,3 +139,8 @@ ZSH_HIGHLIGHT_STYLES[assign]=none
 # Zoxide
 
 eval "$(zoxide init zsh)"
+
+# thefuck
+
+eval $(thefuck --alias)
+eval $(thefuck --alias fk)
