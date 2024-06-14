@@ -82,11 +82,7 @@ alias mkcd="fn_make_and_enter_dir"
 autoload -U compinit && compinit
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 
-ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets)
-
-source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-
 
 # SET THE STYLING OF FZF
 
@@ -100,6 +96,8 @@ export FZF_DEFAULT_OPTS='
 
 # Set zsh-syntax-highlighting colors
 
+ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets)
+source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 ZSH_HIGHLIGHT_STYLES[default]=none
 ZSH_HIGHLIGHT_STYLES[unknown-token]=fg=red,bold
 ZSH_HIGHLIGHT_STYLES[reserved-word]=fg=blue
@@ -121,5 +119,7 @@ ZSH_HIGHLIGHT_STYLES[double-quoted-argument]=fg=yellow
 ZSH_HIGHLIGHT_STYLES[dollar-double-quoted-argument]=fg=cyan
 ZSH_HIGHLIGHT_STYLES[back-double-quoted-argument]=fg=cyan
 ZSH_HIGHLIGHT_STYLES[assign]=none
+
+# Zoxide
 
 eval "$(zoxide init zsh)"
