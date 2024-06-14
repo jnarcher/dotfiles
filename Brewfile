@@ -3,6 +3,8 @@ tap "homebrew/cask-fonts"
 tap "homebrew/services"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
+# Modern, maintained replacement for ls
+brew "eza"
 # Command-line fuzzy finder written in Go
 brew "fzf"
 # GitHub command-line tool
@@ -19,8 +21,6 @@ brew "httpie"
 brew "lazygit"
 # Pager program similar to more
 brew "less"
-# Clone of ls with colorful output, file type icons, and more
-brew "lsd"
 # Node version management
 brew "n"
 # Ambitious Vim-fork focused on extensibility and agility

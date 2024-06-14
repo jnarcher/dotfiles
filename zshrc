@@ -84,6 +84,14 @@ ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets)
 source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
+export FZF_DEFAULT_OPTS='
+  --color=fg:#d0d0d0,fg+:#d0d0d0,bg+:#262626
+  --color=hl:#5f87af,hl+:#5fd7ff,info:#deae57,marker:#e153cb
+  --color=prompt:#deae57,spinner:#af5fff,pointer:#deae57,header:#ffffff
+  --prompt="> " --marker="*"
+  --pointer="⋅" --separator="─" --layout="reverse" --header-first
+  --info="right"'
+
 # Set zsh-syntax-highlighting colors
 
 ZSH_HIGHLIGHT_STYLES[default]=none
