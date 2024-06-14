@@ -27,7 +27,7 @@ export LG_CONFIG_FILE="$HOME/.config/lazygit/config.yml"
 
 # Create Aliases
 
-alias ls='eza -la --git'
+alias ls='eza --color=always --long --git --no-filesize --no-time --no-permissions --no-user'
 alias bbd='echo "Updating Brewfile..." && brew bundle dump --force --describe && echo "Complete!"'
 alias trail='<<<${(F)path}'
 alias ..='cd ..'
