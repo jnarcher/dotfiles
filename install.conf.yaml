@@ -30,6 +30,9 @@
     ~/.local/bin/:
       create: true
       path: bin
+    ~/.config/ohmyposh: 
+      create: true
+      path: config/ohmyposh/
 
 - create:
     - ~/work
@@ -49,6 +52,7 @@
       stdout: true
       stderr: true
     - command: ./setup_term.zsh
+      description: sets up italics in the terminal (using tmux)
       stdout: true
       stderr: true
     - command: defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
