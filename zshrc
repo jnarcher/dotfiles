@@ -40,6 +40,8 @@ alias so='source ~/.zshrc'
 alias t='~/.local/bin/tmux-sessionizer'
 alias lg='lazygit'
 
+alias gl='git log --graph --oneline --all'
+
 # Customize Prompt(s)
 PROMPT='%F{221}%n%f@%F{59}%m%f %1~ %F{%(?.59.red)}%#%f '
 
