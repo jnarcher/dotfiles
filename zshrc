@@ -47,6 +47,7 @@ alias ssh='TERM=xterm-256color ssh'
 alias gl='git log --graph --oneline --all'
 alias ga='git add'
 alias gs='git status'
+alias gc='git commit'
 
 
 # Customize Prompt(s)
