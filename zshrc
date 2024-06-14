@@ -44,10 +44,12 @@ alias ssh='TERM=xterm-256color ssh'
 
 # Git Aliases
 
+alias g='git'
 alias gl='git log --graph --oneline --all'
 alias ga='git add'
 alias gs='git status'
 alias gc='git commit'
+alias gcm='git commit -m'
 alias gp='git push'
 alias gsw='git switch'
 
