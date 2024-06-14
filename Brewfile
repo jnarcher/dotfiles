@@ -1,6 +1,7 @@
 tap "homebrew/bundle"
 tap "homebrew/cask-fonts"
 tap "homebrew/services"
+tap "jandedobbeleer/oh-my-posh"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
 # Modern, maintained replacement for ls
@@ -43,6 +44,8 @@ brew "zsh"
 brew "zsh-autosuggestions"
 # Fish shell like syntax highlighting for zsh
 brew "zsh-syntax-highlighting"
+# Prompt theme engine for any shell
+brew "jandedobbeleer/oh-my-posh/oh-my-posh"
 # Application launcher and productivity software
 cask "alfred"
 # Voice and text chat software
