@@ -30,8 +30,9 @@ require('kanagawa').setup({
 
 function Colorize(color)
 
-    color = color or 'rose-pine'
+    color = color or 'catppuccin-frappe'
     vim.cmd.colorscheme(color)
+    vim.api.nvim_set_hl(0, 'CursorLine', { bg = 'none' })
 
     -- vim.api.nvim_set_hl(0, 'Normal', { bg = 'none' })
     -- vim.api.nvim_set_hl(0, 'NormalFloat', { bg = 'none' })
@@ -49,12 +50,12 @@ function Colorize(color)
     --     fg = '#de5b5b',
     --     bg = 'none',
     -- })
-    vim.api.nvim_set_hl(0, 'CursorLine', { bg = 'none' })
-    -- vim.api.nvim_set_hl(0, 'CursorLineNR', {
-    --     fg = '#ffd75f',
-    --     bold = true,
-    --     italic = true,
-    -- })
+    vim.api.nvim_set_hl(0, 'CursorLineNR', {
+        -- fg = '#ffd75f',
+        bold = true,
+        -- italic = true,
+    })
+
     -- vim.api.nvim_set_hl(0, 'LineNR', { fg = '#5f5f5f', bg = 'none' })
     -- vim.api.nvim_set_hl(0, 'IblIndent', { fg = '#333333' })
 end
