@@ -29,34 +29,11 @@ require('kanagawa').setup({
 })
 
 function Colorize(color)
-
     color = color or 'catppuccin-frappe'
     vim.cmd.colorscheme(color)
     vim.api.nvim_set_hl(0, 'CursorLine', { bg = 'none' })
-
-    -- vim.api.nvim_set_hl(0, 'Normal', { bg = 'none' })
-    -- vim.api.nvim_set_hl(0, 'NormalFloat', { bg = 'none' })
-    -- vim.api.nvim_set_hl(0, 'SignColumn', { bg = 'none' })
-
-    -- vim.api.nvim_set_hl(0, 'GitSignsAdd', {
-    --     fg = '#557cc3',
-    --     bg = 'none',
-    -- })
-    -- vim.api.nvim_set_hl(0, 'GitSignsChange', {
-    --     fg = '#e5bf03',
-    --     bg = 'none'
-    -- })
-    -- vim.api.nvim_set_hl(0, 'GitSignsDelete', {
-    --     fg = '#de5b5b',
-    --     bg = 'none',
-    -- })
-    vim.api.nvim_set_hl(0, 'CursorLineNR', {
-        -- fg = '#ffd75f',
-        bold = true,
-        -- italic = true,
-    })
-
-    -- vim.api.nvim_set_hl(0, 'LineNR', { fg = '#5f5f5f', bg = 'none' })
-    -- vim.api.nvim_set_hl(0, 'IblIndent', { fg = '#333333' })
+    vim.api.nvim_set_hl(0, 'ColorColumn', { bg = '#17181c' })
+    vim.api.nvim_set_hl(0, 'CursorLineNR', { bold = true, italic = true })
+    vim.api.nvim_set_hl(0, 'Comment', { italic = true })
 end
 Colorize()

@@ -40,6 +40,7 @@ alias so='source ~/.zshrc'
 alias t='~/.local/bin/tmux-sessionizer'
 alias lg='lazygit'
 alias cl='clear'
+alias ssh='TERM=xterm-256color ssh'
 
 # Git Aliases
 
@@ -49,8 +50,9 @@ alias gs='git status'
 
 
 # Customize Prompt(s)
-PROMPT='%F{221}%n%f@%F{59}%m%f %1~ %F{%(?.59.red)}%#%f '
-
+if [ "$TERM_PROGRAM" != "Apple_Terminal" ]; then
+  eval "$(oh-my-posh init zsh --config ./theme.omp.json)"
+fi
 
 # Add Locations to $path array
 typeset -U path
