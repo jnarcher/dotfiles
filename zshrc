@@ -84,6 +84,9 @@ ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets)
 source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
+
+# SET THE STYLING OF FZF
+
 export FZF_DEFAULT_OPTS='
   --color=fg:#d0d0d0,fg+:#d0d0d0,bg+:#262626
   --color=hl:#5f87af,hl+:#5fd7ff,info:#deae57,marker:#e153cb
