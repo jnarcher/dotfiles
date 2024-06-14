@@ -72,7 +72,8 @@ zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 
 ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets)
 
-source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # Set zsh-syntax-highlighting colors
 
