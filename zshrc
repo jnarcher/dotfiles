@@ -30,8 +30,8 @@ export LG_CONFIG_FILE="$HOME/.config/lazygit/config.yml"
 alias ls='eza --color=always --long --git --no-filesize --no-time --no-permissions --no-user'
 alias bbd='echo "Updating Brewfile..." && brew bundle dump --force --describe && echo "Complete!"'
 alias trail='<<<${(F)path}'
-alias ..='cd ..'
-alias ...='cd ../..'
+alias ..='z ..'
+alias ...='z ../..'
 alias rm='trash'
 alias vim='nvim'
 alias vi='nvim'
@@ -41,6 +41,7 @@ alias t='~/.local/bin/tmux-sessionizer.zsh'
 alias lg='lazygit'
 alias cl='clear'
 alias ssh='TERM=xterm-256color ssh'
+alias cd='z'
 
 # Git Aliases
 
@@ -77,14 +78,29 @@ alias mkcd="fn_make_and_enter_dir"
 
 # -------------- PLUGINS -------------- #
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 autoload -U compinit && compinit
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
-# SET THE STYLING OF FZF
+# FZF
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+export FZF_CTRL_T_OPTS="--preview 'bat -n --color=always --line-range :500 {}'"
+
+_fzf_comprun() {
+    local command=$1
+    shift
+
+    case "$command" in
+        cd)             fzf --preview 'eza --tree --color=always {} | head -200' "$@" ;;
+        export|unset)   fzf --preview "eval 'echo \$' {}" "$@" ;;
+        ssh)            fzf --preview "dig {}" "$@" ;;
+        *)              fzf --preview "bat -n --color-always --line-range :500 {}" "$@" ;;
+    esac
+}
 
 export FZF_DEFAULT_OPTS='
   --color=fg:#d0d0d0,fg+:#d0d0d0,bg+:#262626
