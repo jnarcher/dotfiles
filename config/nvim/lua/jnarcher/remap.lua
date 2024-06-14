@@ -38,6 +38,3 @@ map('n', '}', '}zz')
 -- Jumping to beginning and end of row
 map({'n', 'v'}, 'H', '^')
 map({'n', 'v'}, 'L', '$')
-
--- Get hints for under cursor
-map('n', 'K', vim.lsp.buf.hover)

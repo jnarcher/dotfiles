@@ -152,10 +152,18 @@ require('lazy').setup({
     -- Tmux to vim pane switching
     'christoomey/vim-tmux-navigator',
 
+    {
+        -- Pretty hover popup windows
+        'Fildo7525/pretty_hover',
+        event = "LspAttach",
+        opts = {},
+    },
+
+
     -- Nicer error UI
     {
-        "folke/trouble.nvim",
-        dependencies = { "nvim-tree/nvim-web-devicons" },
+        'folke/trouble.nvim',
+        dependencies = { 'nvim-tree/nvim-web-devicons' },
         opts = { },
     },
 });
