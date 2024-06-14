@@ -713,13 +713,13 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.081939697265625</real>
+				<real>0.13646063208580017</real>
 				<key>Color Space</key>
-				<string>sRGB</string>
+				<string>P3</string>
 				<key>Green Component</key>
-				<real>0.067600251606314957</real>
+				<real>0.11525962501764297</real>
 				<key>Red Component</key>
-				<real>0.05735778652916685</real>
+				<real>0.11270345002412796</real>
 			</dict>
 			<key>Background Image Location</key>
 			<string></string>
@@ -1195,7 +1195,7 @@
 			<key>Silence Bell</key>
 			<false/>
 			<key>Smart Cursor Color</key>
-			<false/>
+			<true/>
 			<key>Sync Title</key>
 			<false/>
 			<key>Tab Color</key>
@@ -1224,7 +1224,7 @@
 			<key>Use Bright Bold</key>
 			<true/>
 			<key>Use Cursor Guide</key>
-			<true/>
+			<false/>
 			<key>Use Italic Font</key>
 			<true/>
 			<key>Use Non-ASCII Font</key>
