@@ -40,10 +40,6 @@ console_title_template = '{{if .Root}}(Admin){{end}} {{.PWD}}'
         background = 'transparent'
         template = '{{ .FormattedMs }}'
 
-        [blocks.segments.properties]
-            threshold = 5000
-
-
 [[blocks]]
     type = 'prompt'
     alignment = 'left'
@@ -72,8 +68,8 @@ console_title_template = '{{if .Root}}(Admin){{end}} {{.PWD}}'
     template = "❯❯ "
 
 [palette]
-gray = '#6c6c6c'
-primary = '#deae57'
-secondary = 'blue'
-error = 'red'
-accent = '#ffffff'
+    gray = '#6c6c6c'
+    primary = '#deae57'
+    secondary = 'blue'
+    error = 'red'
+    accent = '#ffffff'
