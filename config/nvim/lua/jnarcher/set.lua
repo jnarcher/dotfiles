@@ -2,7 +2,7 @@ vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
 vim.opt.nu = true
-vim.opt.rnu = true
+-- vim.opt.rnu = true
 
 vim.o.completeopt = 'menuone,noselect'
 
@@ -36,6 +36,6 @@ vim.opt.cursorline = true
 vim.opt.cmdheight = 1
 vim.opt.laststatus = 0
 
-vim.opt.winbar = "%=%{expand('%:~:.')}%m%="
+-- vim.opt.winbar = "%=%{expand('%:~:.')}%m%="
 
 vim.opt.colorcolumn = "81"
