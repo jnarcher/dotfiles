@@ -3,7 +3,7 @@
 zoxide_paths=$(zoxide query -l)
 tmux_sessions=$(tmux ls -F "#{session_name}: #{session_windows} window(s)")
 
-selected=$(echo "$tmux_sessions\n$zoxide_paths" | fzf --reverse --header="SESSIONIZER" --header-first)
+selected=$(echo "$tmux_sessions\n$zoxide_paths" | fzf --reverse --header="SESSIONIZER" --header-first --color=dark)
 
 if [[ -z $selected ]]; then
     echo "none selected"
