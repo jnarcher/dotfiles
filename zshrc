@@ -39,7 +39,7 @@ alias v='nvim'
 alias so='source ~/.zshrc'
 alias t='~/.local/bin/tmux-sessionizer'
 alias lg='lazygit'
-
+alias cl='clear'
 alias gl='git log --graph --oneline --all'
 
 # Customize Prompt(s)
