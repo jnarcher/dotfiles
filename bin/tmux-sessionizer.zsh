@@ -1,9 +1,17 @@
 #!/usr/bin/env zsh
 
+export FZF_DEFAULT_OPTS=$FZF_DEFAULT_OPTS'
+  --color=fg:#d0d0d0,fg+:#d0d0d0,bg:-1,bg+:#262626
+  --color=hl:#5f87af,hl+:#5fd7ff,info:#deae57,marker:#e153cb
+  --color=prompt:#deae57,spinner:#af5fff,pointer:#deae57,header:#ffffff
+  --prompt="> " --marker="*"
+  --pointer="⋅" --separator="─" --layout="reverse" --header-first
+  --info="right"'
+
 zoxide_paths=$(zoxide query -l)
 tmux_sessions=$(tmux ls -F "#{session_name}: #{session_windows} window(s)")
 
-selected=$(echo "$tmux_sessions\n$zoxide_paths" | fzf --header="SESSIONIZER" --header-first --reverse)
+selected=$(echo "$tmux_sessions\n$zoxide_paths" | fzf --header="SESSIONIZER")
 
 if [[ -z $selected ]]; then
     echo "none selected"
