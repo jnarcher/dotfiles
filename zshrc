@@ -29,7 +29,7 @@ export LG_CONFIG_FILE="$HOME/.config/lazygit/config.yml"
 
 # BREWFILEPATH="$HOME/.dotfiles/Brewfile"
 
-alias ls='eza --color=always --long --git --no-filesize --no-time --no-permissions --no-user'
+alias ls='eza -a --color=always --long --git --no-filesize --no-time --no-permissions --no-user'
 alias bbd='echo "Updating Brewfile..." && brew bundle dump --force --describe --file=~/.dotfiles/Brewfile && echo "Complete!"'
 alias trail='<<<${(F)path}'
 alias ..='z ..'
