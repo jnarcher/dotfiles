@@ -45,17 +45,6 @@ alias cl='clear'
 alias ssh='TERM=xterm-256color ssh'
 alias cd='z'
 
-# Git Aliases
-
-alias g='git'
-alias gl='git log --graph --oneline --all'
-alias ga='git add'
-alias gs='git status'
-alias gc='git commit'
-alias gcm='git commit -m'
-alias gsw='git switch'
-
-
 # Customize Prompt(s)
 if [ "$TERM_PROGRAM" != "Apple_Terminal" ]; then
   eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/theme.omp.toml)"
