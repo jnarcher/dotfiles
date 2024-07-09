@@ -54,6 +54,8 @@ brew "zsh-syntax-highlighting"
 brew "jandedobbeleer/oh-my-posh/oh-my-posh"
 # Application launcher and productivity software
 cask "alfred"
+# Chromium based browser
+cask "arc"
 # Voice and text chat software
 cask "discord"
 # App to build and share containerised applications and microservices
