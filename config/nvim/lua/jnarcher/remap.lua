@@ -26,15 +26,18 @@ map('v', '<leader>y', '"+y')
 map('n', 'Q', vim.cmd.nop)
 
 -- Window navigation
-map({'n', 'i'}, '<C-h>', '<C-w><C-h>')
-map({'n', 'i'}, '<C-j>', '<C-w><C-j>')
-map({'n', 'i'}, '<C-k>', '<C-w><C-k>')
-map({'n', 'i'}, '<C-l>', '<C-w><C-l>')
+map({ 'n', 'i' }, '<C-h>', '<C-w><C-h>')
+map({ 'n', 'i' }, '<C-j>', '<C-w><C-j>')
+map({ 'n', 'i' }, '<C-k>', '<C-w><C-k>')
+map({ 'n', 'i' }, '<C-l>', '<C-w><C-l>')
 
 -- More readable naviagation
 map('n', '{', '{zz')
 map('n', '}', '}zz')
 
 -- Jumping to beginning and end of row
-map({'n', 'v'}, 'H', '^')
-map({'n', 'v'}, 'L', '$')
+map({ 'n', 'v' }, 'H', '^')
+map({ 'n', 'v' }, 'L', '$')
+
+-- Formatting
+map({ 'n' }, '<leader>f', ':Format<CR>')
