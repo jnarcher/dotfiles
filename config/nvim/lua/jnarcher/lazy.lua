@@ -179,4 +179,9 @@ require('lazy').setup({
         'echasnovski/mini.notify',
         version = '*',
     },
+
+    {
+        'windwp/nvim-ts-autotag',
+        opts = {},
+    },
 });
