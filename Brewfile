@@ -26,6 +26,8 @@ brew "less"
 brew "n"
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
+# Highly capable, feature-rich programming language
+brew "perl"
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.11"
 # Safe, concurrent, practical language
@@ -38,6 +40,8 @@ brew "tlrc"
 brew "tmux"
 # Vi 'workalike' with many additional features
 brew "vim"
+# Watch files and take action when they change
+brew "watchman"
 # Access X11 clipboards from the command-line
 brew "xclip"
 # Programming language designed for robustness, optimality, and clarity
