@@ -29,7 +29,7 @@ export LG_CONFIG_FILE="$HOME/.config/lazygit/config.yml"
 
 # BREWFILEPATH="$HOME/.dotfiles/Brewfile"
 
-alias ls='eza -a --color=always --long --git --no-filesize --no-time --no-permissions --no-user'
+alias ls='eza -a --color=always --long --git --no-filesize --no-time --no-permissions --no-user --header'
 alias bbd='echo "Updating Brewfile..." && brew bundle dump --force --describe --file=~/.dotfiles/Brewfile && echo "Complete!"'
 alias trail='<<<${(F)path}'
 alias ..='z ..'
@@ -135,3 +135,9 @@ eval "$(zoxide init zsh)"
 # thefuck
 
 eval $(thefuck --alias)
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/jnarcher/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/jnarcher/Downloads/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/jnarcher/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/jnarcher/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
