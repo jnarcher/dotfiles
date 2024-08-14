@@ -16,6 +16,8 @@ brew "git"
 brew "git-delta"
 # Open source programming language to build simple/reliable/efficient software
 brew "go"
+# Go Language's command-line interface for database migrations
+brew "goose"
 # User-friendly cURL replacement (command-line HTTP client)
 brew "httpie"
 # Simple terminal UI for git commands
@@ -32,6 +34,8 @@ brew "perl"
 brew "python@3.11"
 # Safe, concurrent, practical language
 brew "rust"
+# Generate type safe Go from SQL
+brew "sqlc"
 # Programmatically correct mistyped console commands
 brew "thefuck"
 # Official tldr client written in Rust
