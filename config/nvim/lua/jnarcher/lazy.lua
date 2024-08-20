@@ -184,4 +184,10 @@ require('lazy').setup({
         'windwp/nvim-ts-autotag',
         opts = {},
     },
+
+    {
+        'MeanderingProgrammer/render-markdown.nvim',
+        opts = {},
+    }
+
 });
