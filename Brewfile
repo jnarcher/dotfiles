@@ -28,12 +28,12 @@ brew "less"
 brew "n"
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
-# Highly capable, feature-rich programming language
-brew "perl"
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.11"
 # Safe, concurrent, practical language
 brew "rust"
+# Substitute for classic 'make' tool with autoconf/automake functionality
+brew "scons"
 # Generate type safe Go from SQL
 brew "sqlc"
 # Programmatically correct mistyped console commands
@@ -78,10 +78,10 @@ cask "font-meslo-for-powerline"
 cask "font-meslo-lg-nerd-font"
 # Web browser
 cask "google-chrome"
-# Client for the Google Drive storage service
-cask "google-drive"
 # Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2"
+# Play mechanical keyboard sounds as you type
+cask "mechvibes"
 # Provides updates to various Microsoft products
 cask "microsoft-auto-update"
 # Meet, chat, call, and collaborate in just one place
@@ -114,24 +114,18 @@ vscode "dracula-theme.theme-dracula"
 vscode "drewxs.tokyo-night-dark"
 vscode "dsznajder.es7-react-js-snippets"
 vscode "dunstontc.viml"
-vscode "eamodio.gitlens"
 vscode "ecmel.vscode-html-css"
 vscode "enkia.tokyo-night"
-vscode "equinusocio.vsc-community-material-theme"
 vscode "equinusocio.vsc-material-theme"
 vscode "equinusocio.vsc-material-theme-icons"
 vscode "esbenp.prettier-vscode"
 vscode "formulahendry.auto-rename-tag"
+vscode "geequlim.godot-tools"
 vscode "github.github-vscode-theme"
 vscode "johnpapa.winteriscoming"
-vscode "k--kato.docomment"
 vscode "kleber-swf.unity-code-snippets"
 vscode "lamarcke.kanagawa-black"
 vscode "ms-azuretools.vscode-docker"
-vscode "ms-dotnettools.csdevkit"
-vscode "ms-dotnettools.csharp"
-vscode "ms-dotnettools.vscode-dotnet-runtime"
-vscode "ms-dotnettools.vscodeintellicode-csharp"
 vscode "ms-vscode-remote.remote-containers"
 vscode "mtxr.sqltools"
 vscode "mvllow.rose-pine"
