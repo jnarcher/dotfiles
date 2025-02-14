@@ -8,6 +8,8 @@ brew "bat"
 brew "eza"
 # Command-line fuzzy finder written in Go
 brew "fzf"
+# GNU compiler collection
+brew "gcc"
 # GitHub command-line tool
 brew "gh"
 # Distributed revision control system
@@ -16,6 +18,8 @@ brew "git"
 brew "git-delta"
 # Open source programming language to build simple/reliable/efficient software
 brew "go"
+# Database migrations CLI tool
+brew "golang-migrate"
 # Go Language's command-line interface for database migrations
 brew "goose"
 # User-friendly cURL replacement (command-line HTTP client)
@@ -24,6 +28,8 @@ brew "httpie"
 brew "lazygit"
 # Pager program similar to more
 brew "less"
+# Utility for directing compilation
+brew "make"
 # Node version management
 brew "n"
 # Ambitious Vim-fork focused on extensibility and agility
@@ -46,6 +52,8 @@ brew "tmux"
 brew "vim"
 # Watch files and take action when they change
 brew "watchman"
+# Command-line client for WebSockets
+brew "websocat"
 # Access X11 clipboards from the command-line
 brew "xclip"
 # Programming language designed for robustness, optimality, and clarity
@@ -59,7 +67,7 @@ brew "zsh-autosuggestions"
 # Fish shell like syntax highlighting for zsh
 brew "zsh-syntax-highlighting"
 # Prompt theme engine for any shell
-brew "jandedobbeleer/oh-my-posh/oh-my-posh"
+brew "jandedobbeleer/oh-my-posh/oh-my-posh", link: false
 # Application launcher and productivity software
 cask "alfred"
 # Chromium based browser
@@ -80,8 +88,6 @@ cask "font-meslo-lg-nerd-font"
 cask "google-chrome"
 # Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2"
-# Play mechanical keyboard sounds as you type
-cask "mechvibes"
 # Provides updates to various Microsoft products
 cask "microsoft-auto-update"
 # Meet, chat, call, and collaborate in just one place
