@@ -1,0 +1,6 @@
+# THIS IS A GLOBAL GIT IGNORE
+
+.DS_Store
+.swp
+.vscode
+.idea

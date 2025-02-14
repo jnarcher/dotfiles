@@ -10,6 +10,7 @@
     ~/.zprofile:
     ~/.zshenv:
     ~/.gitconfig:
+    ~/.gitignore:
     ~/.hushlogin:
     ~/.tmux.conf:
     ~/.config/bat: 
