@@ -4,10 +4,14 @@ tap "homebrew/services"
 tap "jandedobbeleer/oh-my-posh"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
+# Cross-platform make
+brew "cmake"
 # Modern, maintained replacement for ls
 brew "eza"
 # Command-line fuzzy finder written in Go
 brew "fzf"
+# GNU compiler collection
+brew "gcc"
 # GitHub command-line tool
 brew "gh"
 # Distributed revision control system
@@ -24,6 +28,8 @@ brew "httpie"
 brew "lazygit"
 # Pager program similar to more
 brew "less"
+# Utility for directing compilation
+brew "make"
 # Node version management
 brew "n"
 # Ambitious Vim-fork focused on extensibility and agility
@@ -59,7 +65,7 @@ brew "zsh-autosuggestions"
 # Fish shell like syntax highlighting for zsh
 brew "zsh-syntax-highlighting"
 # Prompt theme engine for any shell
-brew "jandedobbeleer/oh-my-posh/oh-my-posh"
+brew "jandedobbeleer/oh-my-posh/oh-my-posh", link: false
 # Application launcher and productivity software
 cask "alfred"
 # Chromium based browser
@@ -117,11 +123,11 @@ vscode "dunstontc.viml"
 vscode "eamodio.gitlens"
 vscode "ecmel.vscode-html-css"
 vscode "enkia.tokyo-night"
-vscode "equinusocio.vsc-community-material-theme"
 vscode "equinusocio.vsc-material-theme"
 vscode "equinusocio.vsc-material-theme-icons"
 vscode "esbenp.prettier-vscode"
 vscode "formulahendry.auto-rename-tag"
+vscode "geequlim.godot-tools"
 vscode "github.github-vscode-theme"
 vscode "johnpapa.winteriscoming"
 vscode "k--kato.docomment"
