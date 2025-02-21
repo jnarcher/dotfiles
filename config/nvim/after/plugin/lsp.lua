@@ -1,6 +1,5 @@
 --  This function gets run when an LSP connects to a particular buffer.
 local on_attach = function(_, bufnr)
-
     local nmap = function(keys, func, desc)
         if desc then
             desc = 'LSP: ' .. desc
@@ -29,10 +28,6 @@ end
 -- Enable the following language servers
 local servers = {
     clangd = {},
-    gopls = {},
-    rust_analyzer = {},
-    tsserver = {},
-    html = { filetypes = { 'html', 'twig', 'hbs'} },
     lua_ls = {
         Lua = {
             workspace = { checkThirdParty = false },
@@ -68,4 +63,3 @@ mason_lspconfig.setup_handlers {
         }
     end
 }
-
