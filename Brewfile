@@ -4,8 +4,12 @@ tap "homebrew/services"
 tap "jandedobbeleer/oh-my-posh"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
+# Generate compilation database for clang tooling
+brew "bear"
 # Cross-platform make
 brew "cmake"
+# Documentation for CMake
+brew "cmake-docs"
 # Modern, maintained replacement for ls
 brew "eza"
 # Command-line fuzzy finder written in Go
@@ -20,8 +24,12 @@ brew "git"
 brew "git-delta"
 # Open source programming language to build simple/reliable/efficient software
 brew "go"
+# Database migrations CLI tool
+brew "golang-migrate"
 # Go Language's command-line interface for database migrations
 brew "goose"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.13"
 # User-friendly cURL replacement (command-line HTTP client)
 brew "httpie"
 # Simple terminal UI for git commands
@@ -40,6 +48,10 @@ brew "perl"
 brew "python@3.11"
 # Safe, concurrent, practical language
 brew "rust"
+# Substitute for classic 'make' tool with autoconf/automake functionality
+brew "scons"
+# Low-level access to audio, keyboard, mouse, joystick, and graphics
+brew "sdl3"
 # Generate type safe Go from SQL
 brew "sqlc"
 # Programmatically correct mistyped console commands
@@ -52,6 +64,8 @@ brew "tmux"
 brew "vim"
 # Watch files and take action when they change
 brew "watchman"
+# Command-line client for WebSockets
+brew "websocat"
 # Access X11 clipboards from the command-line
 brew "xclip"
 # Programming language designed for robustness, optimality, and clarity
@@ -64,8 +78,6 @@ brew "zsh"
 brew "zsh-autosuggestions"
 # Fish shell like syntax highlighting for zsh
 brew "zsh-syntax-highlighting"
-# Prompt theme engine for any shell
-brew "jandedobbeleer/oh-my-posh/oh-my-posh", link: false
 # Application launcher and productivity software
 cask "alfred"
 # Chromium based browser
@@ -139,6 +151,7 @@ vscode "ms-dotnettools.csharp"
 vscode "ms-dotnettools.vscode-dotnet-runtime"
 vscode "ms-dotnettools.vscodeintellicode-csharp"
 vscode "ms-vscode-remote.remote-containers"
+vscode "ms-vscode.cpptools"
 vscode "mtxr.sqltools"
 vscode "mvllow.rose-pine"
 vscode "n7n.n7-vscode-themes"
@@ -151,6 +164,7 @@ vscode "teabyii.ayu"
 vscode "vscodevim.vim"
 vscode "yoavbls.pretty-ts-errors"
 vscode "yukina.nord-dark"
+vscode "yukina.yukinord"
 vscode "yzane.markdown-pdf"
 vscode "yzhang.markdown-all-in-one"
 vscode "zhuangtongfa.material-theme"

@@ -32,30 +32,14 @@ require('lazy').setup({
 
     -- Color Schemes
     {
-        'projekt0n/github-nvim-theme',
-        lazy = false,
-        priority = 1000,
-    },
-    {
         'catppuccin/nvim',
         name = 'catppuccin',
         lazy = false,
         prority = 1000,
     },
     {
-        'folke/tokyonight.nvim',
-        lazy = false,
-        priority = 1000,
-    },
-    {
         'rose-pine/neovim',
         name = 'rose-pine',
-        lazy = false,
-        priority = 1000,
-    },
-    {
-        'rebelot/kanagawa.nvim',
-        name = 'kanagawa',
         lazy = false,
         priority = 1000,
     },
@@ -66,9 +50,6 @@ require('lazy').setup({
         dependencies = { 'nvim-treesitter/nvim-treesitter-textobjects' },
         build = ':TSUpdate',
     },
-
-    -- Quick file jumping
-    'ThePrimeagen/harpoon',
 
     -- Better undo
     'mbbill/undotree',
@@ -96,19 +77,6 @@ require('lazy').setup({
     {
         "lukas-reineke/indent-blankline.nvim",
         main = "ibl",
-        opts = {
-            indent = { char = '⎢' },
-            scope = {
-                show_start = false,
-                show_end = false,
-            }
-        },
-    },
-
-    -- Auto pairing characters
-    {
-        'windwp/nvim-autopairs',
-        event = 'InsertEnter',
     },
 
     -- Cleaner filetree
@@ -118,9 +86,16 @@ require('lazy').setup({
         dependencies = { 'nvim-tree/nvim-web-devicons' },
     },
 
+    -- Nice todo comments
     {
         'folke/todo-comments.nvim',
         dependencies = { "nvim-lua/plenary.nvim" },
+    },
+
+    {
+        'windwp/nvim-autopairs',
+        event = "InsertEnter",
+        config = true
     },
 
     -- LSP Configuration & Plugins
@@ -181,13 +156,7 @@ require('lazy').setup({
     },
 
     {
-        'windwp/nvim-ts-autotag',
-        opts = {},
-    },
-
-    {
         'MeanderingProgrammer/render-markdown.nvim',
         opts = {},
     }
-
 });

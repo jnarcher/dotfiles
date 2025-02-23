@@ -46,9 +46,6 @@ alias ssh='TERM=xterm-256color ssh'
 alias cd='z'
 
 # Customize Prompt(s)
-if [ "$TERM_PROGRAM" != "Apple_Terminal" ]; then
-  eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/theme.omp.toml)"
-fi
 
 # Add Locations to $path array
 typeset -U path
