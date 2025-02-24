@@ -128,13 +128,3 @@ ZSH_HIGHLIGHT_STYLES[assign]=none
 # Zoxide
 
 eval "$(zoxide init zsh)"
-
-# thefuck
-
-eval $(thefuck --alias)
-
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/jnarcher/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/jnarcher/Downloads/google-cloud-sdk/path.zsh.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/Users/jnarcher/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/jnarcher/Downloads/google-cloud-sdk/completion.zsh.inc'; fi

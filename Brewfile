@@ -54,8 +54,6 @@ brew "scons"
 brew "sdl3"
 # Generate type safe Go from SQL
 brew "sqlc"
-# Programmatically correct mistyped console commands
-brew "thefuck"
 # Official tldr client written in Rust
 brew "tlrc"
 # Terminal multiplexer
@@ -80,14 +78,10 @@ brew "zsh-autosuggestions"
 brew "zsh-syntax-highlighting"
 # Application launcher and productivity software
 cask "alfred"
-# Chromium based browser
-cask "arc"
 # Voice and text chat software
 cask "discord"
 # App to build and share containerised applications and microservices
 cask "docker"
-# Client for the Dropbox cloud storage service
-cask "dropbox"
 cask "font-fira-code"
 cask "font-fira-code-nerd-font"
 cask "font-hack"
@@ -96,8 +90,6 @@ cask "font-meslo-for-powerline"
 cask "font-meslo-lg-nerd-font"
 # Web browser
 cask "google-chrome"
-# Client for the Google Drive storage service
-cask "google-drive"
 # Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2"
 # Provides updates to various Microsoft products
