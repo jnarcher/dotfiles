@@ -124,5 +124,7 @@ ZSH_HIGHLIGHT_STYLES[back-double-quoted-argument]=fg=cyan
 ZSH_HIGHLIGHT_STYLES[assign]=none
 
 # Zoxide
-
 eval "$(zoxide init zsh)"
+
+# Vulkan
+source $HOME/vulkansdk/1.4.304.1/setup-env.sh >/dev/null
