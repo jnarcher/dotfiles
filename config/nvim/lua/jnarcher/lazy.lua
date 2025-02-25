@@ -124,6 +124,9 @@ require('lazy').setup({
         },
     },
 
+    -- GLSL syntax highlighting
+    'tikhomirov/vim-glsl',
+
     -- Tmux to vim pane switching
     'christoomey/vim-tmux-navigator',
 
