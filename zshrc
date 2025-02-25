@@ -41,7 +41,6 @@ alias vv='nvim .'
 alias so='source ~/.zshrc'
 alias t='~/.local/bin/tmux-sessionizer.zsh'
 alias lg='lazygit'
-alias cl='clear'
 alias ssh='TERM=xterm-256color ssh'
 alias cd='z'
 
