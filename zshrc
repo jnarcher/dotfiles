@@ -33,8 +33,8 @@ alias ls='eza -a --color=always --long --git --no-filesize --no-time --no-permis
 alias bbd='echo "Updating Brewfile..." && brew bundle dump --force --describe --file=~/.dotfiles/Brewfile && echo "Complete!"'
 alias bbi='echo "Installing from Brewfile..." && brew bundle install --file=~/.dotfiles/Brewfile && echo "Complete!"'
 alias trail='<<<${(F)path}'
-alias ..='z ..'
-alias ...='z ../..'
+alias ..='cd ..'
+alias ...='cd ../..'
 alias rm='trash'
 alias vim='nvim'
 alias vv='nvim .'
@@ -42,7 +42,6 @@ alias so='source ~/.zshrc'
 alias t='~/.local/bin/tmux-sessionizer.zsh'
 alias lg='lazygit'
 alias ssh='TERM=xterm-256color ssh'
-alias cd='z'
 
 # Customize Prompt(s)
 
