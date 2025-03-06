@@ -1,6 +1,8 @@
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
+-- vim..opt
+
 vim.opt.nu = true
 
 vim.o.completeopt = 'menuone,noselect'
@@ -38,3 +40,11 @@ vim.opt.laststatus = 0
 vim.opt.winbar = '%{expand("%:~:.")}%m%='
 
 vim.opt.colorcolumn = '81'
+
+-- Prevent auto formatting comments
+vim.api.nvim_create_autocmd("FileType", {
+    pattern = "*",
+    callback = function()
+        vim.opt_local.formatoptions:remove({ 'c', 'r', 'o' })
+    end
+})

@@ -22,6 +22,10 @@ brew "gh"
 brew "git"
 # Syntax-highlighting pager for git and diff output
 brew "git-delta"
+# Multi-platform library for OpenGL applications
+brew "glfw"
+# C++ mathematics library for graphics software
+brew "glm"
 # Open source programming language to build simple/reliable/efficient software
 brew "go"
 # Database migrations CLI tool
@@ -46,10 +50,14 @@ brew "neovim"
 brew "perl"
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.11"
+# Search tool like grep and The Silver Searcher
+brew "ripgrep"
 # Safe, concurrent, practical language
 brew "rust"
 # Substitute for classic 'make' tool with autoconf/automake functionality
 brew "scons"
+# SDL 1.2 compatibility layer that uses SDL 2.0 behind the scenes
+brew "sdl12-compat"
 # Low-level access to audio, keyboard, mouse, joystick, and graphics
 brew "sdl3"
 # Generate type safe Go from SQL
@@ -127,8 +135,6 @@ vscode "dunstontc.viml"
 vscode "eamodio.gitlens"
 vscode "ecmel.vscode-html-css"
 vscode "enkia.tokyo-night"
-vscode "equinusocio.vsc-material-theme"
-vscode "equinusocio.vsc-material-theme-icons"
 vscode "esbenp.prettier-vscode"
 vscode "formulahendry.auto-rename-tag"
 vscode "geequlim.godot-tools"
@@ -155,7 +161,6 @@ vscode "tamasfe.even-better-toml"
 vscode "teabyii.ayu"
 vscode "vscodevim.vim"
 vscode "yoavbls.pretty-ts-errors"
-vscode "yukina.nord-dark"
 vscode "yukina.yukinord"
 vscode "yzane.markdown-pdf"
 vscode "yzhang.markdown-all-in-one"

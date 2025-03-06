@@ -42,6 +42,7 @@ alias so='source ~/.zshrc'
 alias t='~/.local/bin/tmux-sessionizer.zsh'
 alias lg='lazygit'
 alias ssh='TERM=xterm-256color ssh'
+alias tree='git log --graph --oneline --all --abbrev-commit'
 
 # Customize Prompt(s)
 
@@ -127,4 +128,4 @@ ZSH_HIGHLIGHT_STYLES[assign]=none
 eval "$(zoxide init zsh)"
 
 # Vulkan
-source $HOME/vulkansdk/1.4.304.1/setup-env.sh >/dev/null
+source $HOME/dev/libs/vulkansdk/1.4.304.1/setup-env.sh >/dev/null
