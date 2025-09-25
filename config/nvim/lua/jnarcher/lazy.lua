@@ -161,5 +161,7 @@ require('lazy').setup({
     {
         'MeanderingProgrammer/render-markdown.nvim',
         opts = {},
-    }
+    },
+
+    { 'shortcuts/no-neck-pain.nvim', version = '*' },
 });
