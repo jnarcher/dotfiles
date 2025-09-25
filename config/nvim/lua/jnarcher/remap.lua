@@ -41,3 +41,6 @@ map({ 'n', 'v' }, 'L', '$')
 
 -- Formatting
 map({ 'n' }, '<leader>f', ':Format<CR>')
+
+-- Unhighlights all search highlights
+map({ 'n' }, '<Esc>', '<cmd>nohlsearch<CR>')
